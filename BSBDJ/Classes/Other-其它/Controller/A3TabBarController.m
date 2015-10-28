@@ -11,6 +11,7 @@
 #import "A3FriendTrendsViewController.h"
 #import "A3MeViewController.h"
 #import "A3NewViewController.h"
+#import "A3TabBar.h"
 
 @interface A3TabBarController ()
 
@@ -20,18 +21,44 @@
 #pragma mark - 初始化方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    UIViewController *vc0 = [[UIViewController alloc] init];
-//    vc0.view.backgroundColor = [UIColor redColor];
-//    vc0.tabBarItem.title = @"精华";
-//    vc0.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
-//    vc0.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBar_essence_click_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];//最原始的显示方式不改变图片
-//    [self addChildViewController:vc0];
+        //    UIViewController *vc0 = [[UIViewController alloc] init];
+        //    vc0.view.backgroundColor = [UIColor redColor];
+        //    vc0.tabBarItem.title = @"精华";
+        //    vc0.tabBarItem.image = [UIImage imageNamed:@"tabBar_essence_icon"];
+        //    vc0.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBar_essence_click_icon"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];//最原始的显示方式不改变图片
+        //    [self addChildViewController:vc0];
 
+    //设置item的文字属性
+    [self setupItemTextAtrrs];
+    
     //添加所有的子控制器
     [self setupChildVcs];
+    
+    //处理tabBar 添加发布按钮
+    [self setupTabBar];
    
 }
-
+- (void)setupTabBar
+{
+    [self setValue:[[A3TabBar alloc] init] forKey:@"tabBar"];
+}
+/**
+ *  设置item的文字属性
+ */
+- (void)setupItemTextAtrrs
+{
+    //普通状态下的文字属性
+    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    normalAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    //选中文字状态下的文字属性
+    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    //统一设置所有UITabBarItem的文字属性
+    // 方法或者属性后面有个UI_APPEARANCE_SELECTOR宏,才可以通过appearance对象统一设置
+    UITabBarItem *item = [UITabBarItem appearance];
+    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
 #pragma mark - 添加所有的子控制器
 - (void)setupChildVcs
 {

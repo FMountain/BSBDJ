@@ -17,6 +17,7 @@
 		04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2701BE0A6510056E786 /* A3FriendTrendsViewController.m */; };
 		04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2731BE0A6670056E786 /* A3MeViewController.m */; };
 		04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2761BE0A6890056E786 /* A3NewViewController.m */; };
+		04EE5A731BE0BCDF00F8038B /* A3TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EE5A721BE0BCDF00F8038B /* A3TabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		04DAC2751BE0A6890056E786 /* A3NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3NewViewController.h; sourceTree = "<group>"; };
 		04DAC2761BE0A6890056E786 /* A3NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3NewViewController.m; sourceTree = "<group>"; };
 		04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04EE5A711BE0BCDF00F8038B /* A3TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TabBar.h; sourceTree = "<group>"; };
+		04EE5A721BE0BCDF00F8038B /* A3TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,6 +323,8 @@
 		04DAC2661BE0A3770056E786 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04EE5A711BE0BCDF00F8038B /* A3TabBar.h */,
+				04EE5A721BE0BCDF00F8038B /* A3TabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */,
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
+				04EE5A731BE0BCDF00F8038B /* A3TabBar.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
 				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
 			);
@@ -672,6 +678,7 @@
 				04DAC2481BE0A0CA0056E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DAC2491BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJTests" */ = {
 			isa = XCConfigurationList;
@@ -680,6 +687,7 @@
 				04DAC24B1BE0A0CA0056E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DAC24C1BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJUITests" */ = {
 			isa = XCConfigurationList;
@@ -688,6 +696,7 @@
 				04DAC24E1BE0A0CA0056E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
