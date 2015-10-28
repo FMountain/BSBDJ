@@ -16,7 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+<<<<<<< HEAD
 
+=======
+    // Do any additional setup after loading the view.
 }
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+>>>>>>> parent of 7731ed3... 精华导航和标题
+}
+
 
 @end
