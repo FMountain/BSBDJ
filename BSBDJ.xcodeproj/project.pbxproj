@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DAC2281BE0A0CA0056E786 /* Assets.xcassets */; };
+		04DAC2371BE0A0CA0056E786 /* BSBDJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2361BE0A0CA0056E786 /* BSBDJTests.m */; };
+		04DAC2421BE0A0CA0056E786 /* BSBDJUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2411BE0A0CA0056E786 /* BSBDJUITests.m */; };
+		04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2621BE0A3770056E786 /* AppDelegate.m */; };
+		04DAC2681BE0A3770056E786 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2641BE0A3770056E786 /* main.m */; };
+		04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC26A1BE0A5120056E786 /* A3TabBarController.m */; };
+		04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC26D1BE0A5FD0056E786 /* A3EssenceViewController.m */; };
+		04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2701BE0A6510056E786 /* A3FriendTrendsViewController.m */; };
+		04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2731BE0A6670056E786 /* A3MeViewController.m */; };
+		04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2761BE0A6890056E786 /* A3NewViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04DAC2331BE0A0CA0056E786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DAC2111BE0A0C90056E786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DAC2181BE0A0CA0056E786;
+			remoteInfo = BSBDJ;
+		};
+		04DAC23E1BE0A0CA0056E786 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04DAC2111BE0A0C90056E786 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DAC2181BE0A0CA0056E786;
+			remoteInfo = BSBDJ;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04DAC2191BE0A0CA0056E786 /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DAC2281BE0A0CA0056E786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04DAC22D1BE0A0CA0056E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DAC2321BE0A0CA0056E786 /* BSBDJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSBDJTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DAC2361BE0A0CA0056E786 /* BSBDJTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSBDJTests.m; sourceTree = "<group>"; };
+		04DAC2381BE0A0CA0056E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DAC23D1BE0A0CA0056E786 /* BSBDJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSBDJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DAC2411BE0A0CA0056E786 /* BSBDJUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSBDJUITests.m; sourceTree = "<group>"; };
+		04DAC2431BE0A0CA0056E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DAC2611BE0A3770056E786 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Other-其它/AppDelegate.h"; sourceTree = "<group>"; };
+		04DAC2621BE0A3770056E786 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "Other-其它/AppDelegate.m"; sourceTree = "<group>"; };
+		04DAC2641BE0A3770056E786 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Other-其它/main.m"; sourceTree = "<group>"; };
+		04DAC2691BE0A5120056E786 /* A3TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TabBarController.h; sourceTree = "<group>"; };
+		04DAC26A1BE0A5120056E786 /* A3TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TabBarController.m; sourceTree = "<group>"; };
+		04DAC26C1BE0A5FD0056E786 /* A3EssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3EssenceViewController.h; sourceTree = "<group>"; };
+		04DAC26D1BE0A5FD0056E786 /* A3EssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3EssenceViewController.m; sourceTree = "<group>"; };
+		04DAC26F1BE0A6510056E786 /* A3FriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3FriendTrendsViewController.h; sourceTree = "<group>"; };
+		04DAC2701BE0A6510056E786 /* A3FriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3FriendTrendsViewController.m; sourceTree = "<group>"; };
+		04DAC2721BE0A6670056E786 /* A3MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3MeViewController.h; sourceTree = "<group>"; };
+		04DAC2731BE0A6670056E786 /* A3MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3MeViewController.m; sourceTree = "<group>"; };
+		04DAC2751BE0A6890056E786 /* A3NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3NewViewController.h; sourceTree = "<group>"; };
+		04DAC2761BE0A6890056E786 /* A3NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3NewViewController.m; sourceTree = "<group>"; };
+		04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04DAC2161BE0A0CA0056E786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DAC22F1BE0A0CA0056E786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DAC23A1BE0A0CA0056E786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DAC2101BE0A0C90056E786 = {
+			isa = PBXGroup;
+			children = (
+				04DAC21B1BE0A0CA0056E786 /* BSBDJ */,
+				04DAC2351BE0A0CA0056E786 /* BSBDJTests */,
+				04DAC2401BE0A0CA0056E786 /* BSBDJUITests */,
+				04DAC21A1BE0A0CA0056E786 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04DAC21A1BE0A0CA0056E786 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2191BE0A0CA0056E786 /* BSBDJ.app */,
+				04DAC2321BE0A0CA0056E786 /* BSBDJTests.xctest */,
+				04DAC23D1BE0A0CA0056E786 /* BSBDJUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04DAC21B1BE0A0CA0056E786 /* BSBDJ */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC24F1BE0A3770056E786 /* Classes */,
+				04DAC21C1BE0A0CA0056E786 /* Supporting Files */,
+			);
+			path = BSBDJ;
+			sourceTree = "<group>";
+		};
+		04DAC21C1BE0A0CA0056E786 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2281BE0A0CA0056E786 /* Assets.xcassets */,
+				04DAC22D1BE0A0CA0056E786 /* Info.plist */,
+				04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04DAC2351BE0A0CA0056E786 /* BSBDJTests */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2361BE0A0CA0056E786 /* BSBDJTests.m */,
+				04DAC2381BE0A0CA0056E786 /* Info.plist */,
+			);
+			path = BSBDJTests;
+			sourceTree = "<group>";
+		};
+		04DAC2401BE0A0CA0056E786 /* BSBDJUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2411BE0A0CA0056E786 /* BSBDJUITests.m */,
+				04DAC2431BE0A0CA0056E786 /* Info.plist */,
+			);
+			path = BSBDJUITests;
+			sourceTree = "<group>";
+		};
+		04DAC24F1BE0A3770056E786 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2501BE0A3770056E786 /* Essence-精华 */,
+				04DAC2541BE0A3770056E786 /* FriendTrends-关注 */,
+				04DAC2581BE0A3770056E786 /* Me-我 */,
+				04DAC25C1BE0A3770056E786 /* New-新贴 */,
+				04DAC2601BE0A3770056E786 /* Other-其它 */,
+				04DAC2611BE0A3770056E786 /* AppDelegate.h */,
+				04DAC2621BE0A3770056E786 /* AppDelegate.m */,
+				04DAC2641BE0A3770056E786 /* main.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04DAC2501BE0A3770056E786 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2511BE0A3770056E786 /* Controller */,
+				04DAC2521BE0A3770056E786 /* Model */,
+				04DAC2531BE0A3770056E786 /* View */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		04DAC2511BE0A3770056E786 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC26C1BE0A5FD0056E786 /* A3EssenceViewController.h */,
+				04DAC26D1BE0A5FD0056E786 /* A3EssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DAC2521BE0A3770056E786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DAC2531BE0A3770056E786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04DAC2541BE0A3770056E786 /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2551BE0A3770056E786 /* Controller */,
+				04DAC2561BE0A3770056E786 /* Model */,
+				04DAC2571BE0A3770056E786 /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		04DAC2551BE0A3770056E786 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC26F1BE0A6510056E786 /* A3FriendTrendsViewController.h */,
+				04DAC2701BE0A6510056E786 /* A3FriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DAC2561BE0A3770056E786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DAC2571BE0A3770056E786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04DAC2581BE0A3770056E786 /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2591BE0A3770056E786 /* Controller */,
+				04DAC25A1BE0A3770056E786 /* Model */,
+				04DAC25B1BE0A3770056E786 /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		04DAC2591BE0A3770056E786 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2721BE0A6670056E786 /* A3MeViewController.h */,
+				04DAC2731BE0A6670056E786 /* A3MeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DAC25A1BE0A3770056E786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DAC25B1BE0A3770056E786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04DAC25C1BE0A3770056E786 /* New-新贴 */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC25D1BE0A3770056E786 /* Controller */,
+				04DAC25E1BE0A3770056E786 /* Model */,
+				04DAC25F1BE0A3770056E786 /* View */,
+			);
+			path = "New-新贴";
+			sourceTree = "<group>";
+		};
+		04DAC25D1BE0A3770056E786 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2751BE0A6890056E786 /* A3NewViewController.h */,
+				04DAC2761BE0A6890056E786 /* A3NewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DAC25E1BE0A3770056E786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DAC25F1BE0A3770056E786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04DAC2601BE0A3770056E786 /* Other-其它 */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2631BE0A3770056E786 /* Controller */,
+				04DAC2651BE0A3770056E786 /* Model */,
+				04DAC2661BE0A3770056E786 /* View */,
+			);
+			path = "Other-其它";
+			sourceTree = "<group>";
+		};
+		04DAC2631BE0A3770056E786 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DAC2691BE0A5120056E786 /* A3TabBarController.h */,
+				04DAC26A1BE0A5120056E786 /* A3TabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04DAC2651BE0A3770056E786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04DAC2661BE0A3770056E786 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04DAC2181BE0A0CA0056E786 /* BSBDJ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DAC2461BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJ" */;
+			buildPhases = (
+				04DAC2151BE0A0CA0056E786 /* Sources */,
+				04DAC2161BE0A0CA0056E786 /* Frameworks */,
+				04DAC2171BE0A0CA0056E786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BSBDJ;
+			productName = BSBDJ;
+			productReference = 04DAC2191BE0A0CA0056E786 /* BSBDJ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04DAC2311BE0A0CA0056E786 /* BSBDJTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DAC2491BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJTests" */;
+			buildPhases = (
+				04DAC22E1BE0A0CA0056E786 /* Sources */,
+				04DAC22F1BE0A0CA0056E786 /* Frameworks */,
+				04DAC2301BE0A0CA0056E786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DAC2341BE0A0CA0056E786 /* PBXTargetDependency */,
+			);
+			name = BSBDJTests;
+			productName = BSBDJTests;
+			productReference = 04DAC2321BE0A0CA0056E786 /* BSBDJTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04DAC23C1BE0A0CA0056E786 /* BSBDJUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DAC24C1BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJUITests" */;
+			buildPhases = (
+				04DAC2391BE0A0CA0056E786 /* Sources */,
+				04DAC23A1BE0A0CA0056E786 /* Frameworks */,
+				04DAC23B1BE0A0CA0056E786 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04DAC23F1BE0A0CA0056E786 /* PBXTargetDependency */,
+			);
+			name = BSBDJUITests;
+			productName = BSBDJUITests;
+			productReference = 04DAC23D1BE0A0CA0056E786 /* BSBDJUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04DAC2111BE0A0C90056E786 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = A3;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					04DAC2181BE0A0CA0056E786 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					04DAC2311BE0A0CA0056E786 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 5M6YDYCJ9V;
+						TestTargetID = 04DAC2181BE0A0CA0056E786;
+					};
+					04DAC23C1BE0A0CA0056E786 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 5M6YDYCJ9V;
+						TestTargetID = 04DAC2181BE0A0CA0056E786;
+					};
+				};
+			};
+			buildConfigurationList = 04DAC2141BE0A0C90056E786 /* Build configuration list for PBXProject "BSBDJ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04DAC2101BE0A0C90056E786;
+			productRefGroup = 04DAC21A1BE0A0CA0056E786 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04DAC2181BE0A0CA0056E786 /* BSBDJ */,
+				04DAC2311BE0A0CA0056E786 /* BSBDJTests */,
+				04DAC23C1BE0A0CA0056E786 /* BSBDJUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04DAC2171BE0A0CA0056E786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DAC2301BE0A0CA0056E786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DAC23B1BE0A0CA0056E786 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DAC2151BE0A0CA0056E786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DAC2681BE0A3770056E786 /* main.m in Sources */,
+				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
+				04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */,
+				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
+				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
+				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
+				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DAC22E1BE0A0CA0056E786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DAC2371BE0A0CA0056E786 /* BSBDJTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04DAC2391BE0A0CA0056E786 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DAC2421BE0A0CA0056E786 /* BSBDJUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DAC2341BE0A0CA0056E786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DAC2181BE0A0CA0056E786 /* BSBDJ */;
+			targetProxy = 04DAC2331BE0A0CA0056E786 /* PBXContainerItemProxy */;
+		};
+		04DAC23F1BE0A0CA0056E786 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DAC2181BE0A0CA0056E786 /* BSBDJ */;
+			targetProxy = 04DAC23E1BE0A0CA0056E786 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04DAC2441BE0A0CA0056E786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04DAC2451BE0A0CA0056E786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04DAC2471BE0A0CA0056E786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = BSBDJ/PrefixHeader.pch;
+				INFOPLIST_FILE = BSBDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		04DAC2481BE0A0CA0056E786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = BSBDJ/PrefixHeader.pch;
+				INFOPLIST_FILE = BSBDJ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		04DAC24A1BE0A0CA0056E786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BSBDJTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSBDJ.app/BSBDJ";
+			};
+			name = Debug;
+		};
+		04DAC24B1BE0A0CA0056E786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BSBDJTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSBDJ.app/BSBDJ";
+			};
+			name = Release;
+		};
+		04DAC24D1BE0A0CA0056E786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BSBDJUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BSBDJ;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		04DAC24E1BE0A0CA0056E786 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BSBDJUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BSBDJ;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04DAC2141BE0A0C90056E786 /* Build configuration list for PBXProject "BSBDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DAC2441BE0A0CA0056E786 /* Debug */,
+				04DAC2451BE0A0CA0056E786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04DAC2461BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DAC2471BE0A0CA0056E786 /* Debug */,
+				04DAC2481BE0A0CA0056E786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04DAC2491BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DAC24A1BE0A0CA0056E786 /* Debug */,
+				04DAC24B1BE0A0CA0056E786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		04DAC24C1BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DAC24D1BE0A0CA0056E786 /* Debug */,
+				04DAC24E1BE0A0CA0056E786 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04DAC2111BE0A0C90056E786 /* Project object */;
+}
