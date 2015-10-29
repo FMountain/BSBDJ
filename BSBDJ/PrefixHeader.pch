@@ -9,6 +9,10 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#ifdef __OBJC__ //  #ifdef __OBJC__ 和 #endif中的内容只会出现在OC源文件中
+
+#import "UIBarButtonItem+A3Extension.h"
+
 #ifdef DEBUG //开发调试阶段
 #define A3Log(...) NSLog(__VA_ARGS__)
 #else //打包阶段
@@ -24,4 +28,5 @@
 
 #define A3GrayColor(v) A3Color(v, v, v)
 
+#endif
 #endif /* PrefixHeader_pch */

@@ -16,17 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-<<<<<<< HEAD
-
-=======
-    // Do any additional setup after loading the view.
+    
+    // 设置标题
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    
+    // 设置左上角
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(mainTagSubClick)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
->>>>>>> parent of 7731ed3... 精华导航和标题
+- (void)mainTagSubClick
+{
+    A3LogFuc;
 }
-
 
 @end

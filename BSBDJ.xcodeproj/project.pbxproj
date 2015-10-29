@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044926BC1BE0EC980092B75F /* A3TabBar.m */; };
+		0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */; };
 		04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DAC2281BE0A0CA0056E786 /* Assets.xcassets */; };
 		04DAC2371BE0A0CA0056E786 /* BSBDJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2361BE0A0CA0056E786 /* BSBDJTests.m */; };
 		04DAC2421BE0A0CA0056E786 /* BSBDJUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2411BE0A0CA0056E786 /* BSBDJUITests.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044926BB1BE0EC980092B75F /* A3TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3TabBar.h; path = "BSBDJ/Classes/Other-其它/A3TabBar.h"; sourceTree = SOURCE_ROOT; };
+		044926BC1BE0EC980092B75F /* A3TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TabBar.m; path = "BSBDJ/Classes/Other-其它/A3TabBar.m"; sourceTree = SOURCE_ROOT; };
+		0463583A1BE0E79C002264DE /* UIBarButtonItem+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+A3Extension.h"; sourceTree = "<group>"; };
+		0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+A3Extension.m"; sourceTree = "<group>"; };
 		04DAC2191BE0A0CA0056E786 /* BSBDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSBDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DAC2281BE0A0CA0056E786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DAC22D1BE0A0CA0056E786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0463583D1BE0E7CC002264DE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0463583A1BE0E79C002264DE /* UIBarButtonItem+A3Extension.h */,
+				0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		04DAC2101BE0A0C90056E786 = {
 			isa = PBXGroup;
 			children = (
@@ -148,9 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				04DAC2501BE0A3770056E786 /* Essence-精华 */,
+				04DAC25C1BE0A3770056E786 /* New-新贴 */,
 				04DAC2541BE0A3770056E786 /* FriendTrends-关注 */,
 				04DAC2581BE0A3770056E786 /* Me-我 */,
-				04DAC25C1BE0A3770056E786 /* New-新贴 */,
 				04DAC2601BE0A3770056E786 /* Other-其它 */,
 				04DAC2611BE0A3770056E786 /* AppDelegate.h */,
 				04DAC2621BE0A3770056E786 /* AppDelegate.m */,
@@ -294,6 +309,7 @@
 		04DAC2601BE0A3770056E786 /* Other-其它 */ = {
 			isa = PBXGroup;
 			children = (
+				0463583D1BE0E7CC002264DE /* Category */,
 				04DAC2631BE0A3770056E786 /* Controller */,
 				04DAC2651BE0A3770056E786 /* Model */,
 				04DAC2661BE0A3770056E786 /* View */,
@@ -320,6 +336,8 @@
 		04DAC2661BE0A3770056E786 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				044926BB1BE0EC980092B75F /* A3TabBar.h */,
+				044926BC1BE0EC980092B75F /* A3TabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,7 +474,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
+				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
 				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
+				0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */,
 				04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */,
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
@@ -672,6 +692,7 @@
 				04DAC2481BE0A0CA0056E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DAC2491BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJTests" */ = {
 			isa = XCConfigurationList;
@@ -680,6 +701,7 @@
 				04DAC24B1BE0A0CA0056E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04DAC24C1BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJUITests" */ = {
 			isa = XCConfigurationList;
@@ -688,6 +710,7 @@
 				04DAC24E1BE0A0CA0056E786 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
