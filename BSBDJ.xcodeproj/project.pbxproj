@@ -33,6 +33,7 @@
 		04DE49331BE3607400BF0F85 /* UIImage+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49321BE3607400BF0F85 /* UIImage+A3Extension.m */; };
 		04DE49361BE3632300BF0F85 /* UIImageView+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49351BE3632300BF0F85 /* UIImageView+A3Extension.m */; };
 		04DE49391BE36BB000BF0F85 /* A3HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49381BE36BB000BF0F85 /* A3HTTPSessionManager.m */; };
+		04DE493C1BE3874F00BF0F85 /* NSDate+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE493B1BE3874F00BF0F85 /* NSDate+A3Extension.m */; };
 		60BDF6FFCFA937FF5C8AB625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DE1326DEF52195771024E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,8 @@
 		04DE49351BE3632300BF0F85 /* UIImageView+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+A3Extension.m"; sourceTree = "<group>"; };
 		04DE49371BE36BB000BF0F85 /* A3HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3HTTPSessionManager.h; sourceTree = "<group>"; };
 		04DE49381BE36BB000BF0F85 /* A3HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3HTTPSessionManager.m; sourceTree = "<group>"; };
+		04DE493A1BE3874F00BF0F85 /* NSDate+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+A3Extension.h"; sourceTree = "<group>"; };
+		04DE493B1BE3874F00BF0F85 /* NSDate+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+A3Extension.m"; sourceTree = "<group>"; };
 		274C34ED3A27DA25D146A6B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		31E90EC749C11914B1CD681B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		95DE1326DEF52195771024E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +153,8 @@
 				04DE49321BE3607400BF0F85 /* UIImage+A3Extension.m */,
 				04DE49341BE3632300BF0F85 /* UIImageView+A3Extension.h */,
 				04DE49351BE3632300BF0F85 /* UIImageView+A3Extension.m */,
+				04DE493A1BE3874F00BF0F85 /* NSDate+A3Extension.h */,
+				04DE493B1BE3874F00BF0F85 /* NSDate+A3Extension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -627,6 +632,7 @@
 			files = (
 				04DE49251BE31B6E00BF0F85 /* A3WordViewController.m in Sources */,
 				04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */,
+				04DE493C1BE3874F00BF0F85 /* NSDate+A3Extension.m in Sources */,
 				04DE49391BE36BB000BF0F85 /* A3HTTPSessionManager.m in Sources */,
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
