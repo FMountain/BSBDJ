@@ -27,6 +27,7 @@
         UIButton *publishButton = [[UIButton alloc] init];
         [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishButton setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        //根据控件大小自动调整.
         [publishButton sizeToFit];
         [self addSubview:publishButton];
         self.publishButton = publishButton;

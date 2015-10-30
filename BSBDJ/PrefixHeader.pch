@@ -12,6 +12,7 @@
 #ifdef __OBJC__ //  #ifdef __OBJC__ 和 #endif中的内容只会出现在OC源文件中
 
 #import "UIBarButtonItem+A3Extension.h"
+#import "UIView+A3Extension.h"
 
 #ifdef DEBUG //开发调试阶段
 #define A3Log(...) NSLog(__VA_ARGS__)

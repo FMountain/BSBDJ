@@ -19,6 +19,9 @@
 		04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2701BE0A6510056E786 /* A3FriendTrendsViewController.m */; };
 		04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2731BE0A6670056E786 /* A3MeViewController.m */; };
 		04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2761BE0A6890056E786 /* A3NewViewController.m */; };
+		04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49111BE306BA00BF0F85 /* UIView+A3Extension.m */; };
+		04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49141BE3105E00BF0F85 /* A3TitleButton.m */; };
+		60BDF6FFCFA937FF5C8AB625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DE1326DEF52195771024E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +68,14 @@
 		04DAC2731BE0A6670056E786 /* A3MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3MeViewController.m; sourceTree = "<group>"; };
 		04DAC2751BE0A6890056E786 /* A3NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3NewViewController.h; sourceTree = "<group>"; };
 		04DAC2761BE0A6890056E786 /* A3NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3NewViewController.m; sourceTree = "<group>"; };
-		04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		04DE49101BE306BA00BF0F85 /* UIView+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+A3Extension.h"; sourceTree = "<group>"; };
+		04DE49111BE306BA00BF0F85 /* UIView+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+A3Extension.m"; sourceTree = "<group>"; };
+		04DE49131BE3105E00BF0F85 /* A3TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3TitleButton.h; path = "BSBDJ/Classes/Other-其它/A3TitleButton.h"; sourceTree = SOURCE_ROOT; };
+		04DE49141BE3105E00BF0F85 /* A3TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TitleButton.m; path = "BSBDJ/Classes/Other-其它/A3TitleButton.m"; sourceTree = SOURCE_ROOT; };
+		274C34ED3A27DA25D146A6B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		31E90EC749C11914B1CD681B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		95DE1326DEF52195771024E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60BDF6FFCFA937FF5C8AB625 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +109,8 @@
 			children = (
 				0463583A1BE0E79C002264DE /* UIBarButtonItem+A3Extension.h */,
 				0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */,
+				04DE49101BE306BA00BF0F85 /* UIView+A3Extension.h */,
+				04DE49111BE306BA00BF0F85 /* UIView+A3Extension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -109,6 +122,8 @@
 				04DAC2351BE0A0CA0056E786 /* BSBDJTests */,
 				04DAC2401BE0A0CA0056E786 /* BSBDJUITests */,
 				04DAC21A1BE0A0CA0056E786 /* Products */,
+				F8F43EADE5A9158DE040BA4C /* Pods */,
+				4EA34FB74784397B5A2A9ADC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,7 +151,6 @@
 			children = (
 				04DAC2281BE0A0CA0056E786 /* Assets.xcassets */,
 				04DAC22D1BE0A0CA0056E786 /* Info.plist */,
-				04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -170,6 +184,7 @@
 				04DAC2611BE0A3770056E786 /* AppDelegate.h */,
 				04DAC2621BE0A3770056E786 /* AppDelegate.m */,
 				04DAC2641BE0A3770056E786 /* main.m */,
+				04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -203,6 +218,8 @@
 		04DAC2531BE0A3770056E786 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04DE49131BE3105E00BF0F85 /* A3TitleButton.h */,
+				04DE49141BE3105E00BF0F85 /* A3TitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +359,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		4EA34FB74784397B5A2A9ADC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95DE1326DEF52195771024E0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8F43EADE5A9158DE040BA4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				274C34ED3A27DA25D146A6B7 /* Pods.debug.xcconfig */,
+				31E90EC749C11914B1CD681B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,9 +383,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04DAC2461BE0A0CA0056E786 /* Build configuration list for PBXNativeTarget "BSBDJ" */;
 			buildPhases = (
+				8753E473499BEFC7DC905698 /* Check Pods Manifest.lock */,
 				04DAC2151BE0A0CA0056E786 /* Sources */,
 				04DAC2161BE0A0CA0056E786 /* Frameworks */,
 				04DAC2171BE0A0CA0056E786 /* Resources */,
+				8DA70E0735C6EF29472F2864 /* Embed Pods Frameworks */,
+				8CC0CDBF7C296A867B5B60C5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -468,11 +505,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8753E473499BEFC7DC905698 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CC0CDBF7C296A867B5B60C5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DA70E0735C6EF29472F2864 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04DAC2151BE0A0CA0056E786 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */,
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
 				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
@@ -480,6 +566,7 @@
 				04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */,
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
+				04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
 				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
 			);
@@ -599,6 +686,7 @@
 		};
 		04DAC2471BE0A0CA0056E786 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274C34ED3A27DA25D146A6B7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
@@ -613,6 +701,7 @@
 		};
 		04DAC2481BE0A0CA0056E786 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31E90EC749C11914B1CD681B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
