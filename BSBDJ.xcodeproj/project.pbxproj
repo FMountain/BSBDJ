@@ -27,6 +27,12 @@
 		04DE49221BE31B6300BF0F85 /* A3PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49211BE31B6300BF0F85 /* A3PictureViewController.m */; };
 		04DE49251BE31B6E00BF0F85 /* A3WordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49241BE31B6E00BF0F85 /* A3WordViewController.m */; };
 		04DE49281BE3226700BF0F85 /* A3Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49271BE3226700BF0F85 /* A3Const.m */; };
+		04DE492B1BE359F100BF0F85 /* A3Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE492A1BE359F100BF0F85 /* A3Topic.m */; };
+		04DE492E1BE35CA500BF0F85 /* A3TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE492D1BE35CA500BF0F85 /* A3TopicCell.m */; };
+		04DE49301BE35D8300BF0F85 /* A3TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DE492F1BE35D8300BF0F85 /* A3TopicCell.xib */; };
+		04DE49331BE3607400BF0F85 /* UIImage+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49321BE3607400BF0F85 /* UIImage+A3Extension.m */; };
+		04DE49361BE3632300BF0F85 /* UIImageView+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49351BE3632300BF0F85 /* UIImageView+A3Extension.m */; };
+		04DE49391BE36BB000BF0F85 /* A3HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49381BE36BB000BF0F85 /* A3HTTPSessionManager.m */; };
 		60BDF6FFCFA937FF5C8AB625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DE1326DEF52195771024E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +97,17 @@
 		04DE49241BE31B6E00BF0F85 /* A3WordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3WordViewController.m; sourceTree = "<group>"; };
 		04DE49261BE3226700BF0F85 /* A3Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3Const.h; path = "Other-其它/A3Const.h"; sourceTree = "<group>"; };
 		04DE49271BE3226700BF0F85 /* A3Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3Const.m; path = "Other-其它/A3Const.m"; sourceTree = "<group>"; };
+		04DE49291BE359F100BF0F85 /* A3Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3Topic.h; path = "BSBDJ/Classes/Other-其它/A3Topic.h"; sourceTree = SOURCE_ROOT; };
+		04DE492A1BE359F100BF0F85 /* A3Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3Topic.m; path = "BSBDJ/Classes/Other-其它/A3Topic.m"; sourceTree = SOURCE_ROOT; };
+		04DE492C1BE35CA500BF0F85 /* A3TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3TopicCell.h; path = "BSBDJ/Classes/Other-其它/A3TopicCell.h"; sourceTree = SOURCE_ROOT; };
+		04DE492D1BE35CA500BF0F85 /* A3TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TopicCell.m; path = "BSBDJ/Classes/Other-其它/A3TopicCell.m"; sourceTree = SOURCE_ROOT; };
+		04DE492F1BE35D8300BF0F85 /* A3TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = A3TopicCell.xib; path = "BSBDJ/Classes/Other-其它/A3TopicCell.xib"; sourceTree = SOURCE_ROOT; };
+		04DE49311BE3607400BF0F85 /* UIImage+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+A3Extension.h"; sourceTree = "<group>"; };
+		04DE49321BE3607400BF0F85 /* UIImage+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+A3Extension.m"; sourceTree = "<group>"; };
+		04DE49341BE3632300BF0F85 /* UIImageView+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+A3Extension.h"; sourceTree = "<group>"; };
+		04DE49351BE3632300BF0F85 /* UIImageView+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+A3Extension.m"; sourceTree = "<group>"; };
+		04DE49371BE36BB000BF0F85 /* A3HTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3HTTPSessionManager.h; sourceTree = "<group>"; };
+		04DE49381BE36BB000BF0F85 /* A3HTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3HTTPSessionManager.m; sourceTree = "<group>"; };
 		274C34ED3A27DA25D146A6B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		31E90EC749C11914B1CD681B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		95DE1326DEF52195771024E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +146,10 @@
 				0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */,
 				04DE49101BE306BA00BF0F85 /* UIView+A3Extension.h */,
 				04DE49111BE306BA00BF0F85 /* UIView+A3Extension.m */,
+				04DE49311BE3607400BF0F85 /* UIImage+A3Extension.h */,
+				04DE49321BE3607400BF0F85 /* UIImage+A3Extension.m */,
+				04DE49341BE3632300BF0F85 /* UIImageView+A3Extension.h */,
+				04DE49351BE3632300BF0F85 /* UIImageView+A3Extension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -204,6 +225,8 @@
 				04DAC2641BE0A3770056E786 /* main.m */,
 				04DE49261BE3226700BF0F85 /* A3Const.h */,
 				04DE49271BE3226700BF0F85 /* A3Const.m */,
+				04DE49371BE36BB000BF0F85 /* A3HTTPSessionManager.h */,
+				04DE49381BE36BB000BF0F85 /* A3HTTPSessionManager.m */,
 				04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */,
 			);
 			path = Classes;
@@ -232,6 +255,8 @@
 		04DAC2521BE0A3770056E786 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04DE49291BE359F100BF0F85 /* A3Topic.h */,
+				04DE492A1BE359F100BF0F85 /* A3Topic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +266,9 @@
 			children = (
 				04DE49131BE3105E00BF0F85 /* A3TitleButton.h */,
 				04DE49141BE3105E00BF0F85 /* A3TitleButton.m */,
+				04DE492C1BE35CA500BF0F85 /* A3TopicCell.h */,
+				04DE492D1BE35CA500BF0F85 /* A3TopicCell.m */,
+				04DE492F1BE35D8300BF0F85 /* A3TopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */,
+				04DE49301BE35D8300BF0F85 /* A3TopicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,11 +627,14 @@
 			files = (
 				04DE49251BE31B6E00BF0F85 /* A3WordViewController.m in Sources */,
 				04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */,
+				04DE49391BE36BB000BF0F85 /* A3HTTPSessionManager.m in Sources */,
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
+				04DE49361BE3632300BF0F85 /* UIImageView+A3Extension.m in Sources */,
 				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
 				04DE491C1BE31B4000BF0F85 /* A3VideoViewController.m in Sources */,
 				04DE49281BE3226700BF0F85 /* A3Const.m in Sources */,
+				04DE492B1BE359F100BF0F85 /* A3Topic.m in Sources */,
 				04DE49191BE31B2F00BF0F85 /* A3AllViewController.m in Sources */,
 				0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */,
 				04DE491F1BE31B4E00BF0F85 /* A3VoiceViewController.m in Sources */,
@@ -610,7 +642,9 @@
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
 				04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */,
+				04DE492E1BE35CA500BF0F85 /* A3TopicCell.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
+				04DE49331BE3607400BF0F85 /* UIImage+A3Extension.m in Sources */,
 				04DE49221BE31B6300BF0F85 /* A3PictureViewController.m in Sources */,
 				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
 			);
