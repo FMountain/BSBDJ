@@ -21,6 +21,12 @@
 		04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAC2761BE0A6890056E786 /* A3NewViewController.m */; };
 		04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49111BE306BA00BF0F85 /* UIView+A3Extension.m */; };
 		04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49141BE3105E00BF0F85 /* A3TitleButton.m */; };
+		04DE49191BE31B2F00BF0F85 /* A3AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49181BE31B2F00BF0F85 /* A3AllViewController.m */; };
+		04DE491C1BE31B4000BF0F85 /* A3VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE491B1BE31B4000BF0F85 /* A3VideoViewController.m */; };
+		04DE491F1BE31B4E00BF0F85 /* A3VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE491E1BE31B4E00BF0F85 /* A3VoiceViewController.m */; };
+		04DE49221BE31B6300BF0F85 /* A3PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49211BE31B6300BF0F85 /* A3PictureViewController.m */; };
+		04DE49251BE31B6E00BF0F85 /* A3WordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49241BE31B6E00BF0F85 /* A3WordViewController.m */; };
+		04DE49281BE3226700BF0F85 /* A3Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DE49271BE3226700BF0F85 /* A3Const.m */; };
 		60BDF6FFCFA937FF5C8AB625 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95DE1326DEF52195771024E0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +79,18 @@
 		04DE49111BE306BA00BF0F85 /* UIView+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+A3Extension.m"; sourceTree = "<group>"; };
 		04DE49131BE3105E00BF0F85 /* A3TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3TitleButton.h; path = "BSBDJ/Classes/Other-其它/A3TitleButton.h"; sourceTree = SOURCE_ROOT; };
 		04DE49141BE3105E00BF0F85 /* A3TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TitleButton.m; path = "BSBDJ/Classes/Other-其它/A3TitleButton.m"; sourceTree = SOURCE_ROOT; };
+		04DE49171BE31B2F00BF0F85 /* A3AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3AllViewController.h; sourceTree = "<group>"; };
+		04DE49181BE31B2F00BF0F85 /* A3AllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3AllViewController.m; sourceTree = "<group>"; };
+		04DE491A1BE31B3F00BF0F85 /* A3VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3VideoViewController.h; sourceTree = "<group>"; };
+		04DE491B1BE31B4000BF0F85 /* A3VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3VideoViewController.m; sourceTree = "<group>"; };
+		04DE491D1BE31B4E00BF0F85 /* A3VoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3VoiceViewController.h; sourceTree = "<group>"; };
+		04DE491E1BE31B4E00BF0F85 /* A3VoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3VoiceViewController.m; sourceTree = "<group>"; };
+		04DE49201BE31B6300BF0F85 /* A3PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3PictureViewController.h; sourceTree = "<group>"; };
+		04DE49211BE31B6300BF0F85 /* A3PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3PictureViewController.m; sourceTree = "<group>"; };
+		04DE49231BE31B6E00BF0F85 /* A3WordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3WordViewController.h; sourceTree = "<group>"; };
+		04DE49241BE31B6E00BF0F85 /* A3WordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3WordViewController.m; sourceTree = "<group>"; };
+		04DE49261BE3226700BF0F85 /* A3Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3Const.h; path = "Other-其它/A3Const.h"; sourceTree = "<group>"; };
+		04DE49271BE3226700BF0F85 /* A3Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3Const.m; path = "Other-其它/A3Const.m"; sourceTree = "<group>"; };
 		274C34ED3A27DA25D146A6B7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		31E90EC749C11914B1CD681B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		95DE1326DEF52195771024E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +202,8 @@
 				04DAC2611BE0A3770056E786 /* AppDelegate.h */,
 				04DAC2621BE0A3770056E786 /* AppDelegate.m */,
 				04DAC2641BE0A3770056E786 /* main.m */,
+				04DE49261BE3226700BF0F85 /* A3Const.h */,
+				04DE49271BE3226700BF0F85 /* A3Const.m */,
 				04DAC2781BE0B0D50056E786 /* PrefixHeader.pch */,
 			);
 			path = Classes;
@@ -202,6 +222,7 @@
 		04DAC2511BE0A3770056E786 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04DE49161BE3128F00BF0F85 /* Topic */,
 				04DAC26C1BE0A5FD0056E786 /* A3EssenceViewController.h */,
 				04DAC26D1BE0A5FD0056E786 /* A3EssenceViewController.m */,
 			);
@@ -357,6 +378,23 @@
 				044926BC1BE0EC980092B75F /* A3TabBar.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04DE49161BE3128F00BF0F85 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				04DE49171BE31B2F00BF0F85 /* A3AllViewController.h */,
+				04DE49181BE31B2F00BF0F85 /* A3AllViewController.m */,
+				04DE491A1BE31B3F00BF0F85 /* A3VideoViewController.h */,
+				04DE491B1BE31B4000BF0F85 /* A3VideoViewController.m */,
+				04DE491D1BE31B4E00BF0F85 /* A3VoiceViewController.h */,
+				04DE491E1BE31B4E00BF0F85 /* A3VoiceViewController.m */,
+				04DE49201BE31B6300BF0F85 /* A3PictureViewController.h */,
+				04DE49211BE31B6300BF0F85 /* A3PictureViewController.m */,
+				04DE49231BE31B6E00BF0F85 /* A3WordViewController.h */,
+				04DE49241BE31B6E00BF0F85 /* A3WordViewController.m */,
+			);
+			name = Topic;
 			sourceTree = "<group>";
 		};
 		4EA34FB74784397B5A2A9ADC /* Frameworks */ = {
@@ -558,16 +596,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DE49251BE31B6E00BF0F85 /* A3WordViewController.m in Sources */,
 				04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */,
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
 				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
+				04DE491C1BE31B4000BF0F85 /* A3VideoViewController.m in Sources */,
+				04DE49281BE3226700BF0F85 /* A3Const.m in Sources */,
+				04DE49191BE31B2F00BF0F85 /* A3AllViewController.m in Sources */,
 				0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */,
+				04DE491F1BE31B4E00BF0F85 /* A3VoiceViewController.m in Sources */,
 				04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */,
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
 				04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
+				04DE49221BE31B6300BF0F85 /* A3PictureViewController.m in Sources */,
 				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
