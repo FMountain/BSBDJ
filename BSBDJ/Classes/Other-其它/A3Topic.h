@@ -41,5 +41,9 @@ typedef enum{
 /** 帖子的类型 */
 @property (nonatomic,assign)A3TopicType type;
 
+//辅助属性
+/** 自定义cell的高度 */
+@property (nonatomic,assign)CGFloat cellHeight;
+
 
 @end

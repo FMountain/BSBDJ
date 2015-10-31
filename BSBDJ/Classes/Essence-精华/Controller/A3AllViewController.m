@@ -13,12 +13,13 @@
 #import <MJRefresh.h>
 #import "A3Topic.h"
 
+
 @interface A3AllViewController ()
 /** 请求管理者 */
 @property (nonatomic,weak)A3HTTPSessionManager *manager;
 
 /** 帖子数据 */
-@property (nonatomic,strong)NSMutableArray *topics;
+@property (nonatomic,strong)NSMutableArray<A3Topic *> *topics;
 
 /** 加载下一页数据的参数 */
 @property (nonatomic,copy)NSString *maxtime;
@@ -158,5 +159,11 @@ static NSString *const A3TopicCellId = @"topic";
     
     cell.topic = self.topics[indexPath.row];
     return cell;
+}
+
+#pragma mark - 代理方法 调整cell的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return self.topics[indexPath.row].cellHeight;
 }
 @end

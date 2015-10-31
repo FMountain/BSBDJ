@@ -49,4 +49,32 @@
         return  _created_at;
     }
 }
+/**
+ *  在这个方法中计算了cell的高度, 让cell根据内容的大小自动变换
+ *
+ */
+- (CGFloat)cellHeight
+{
+    //如果已经 计算过cellHeight,就直接返回以前的值
+    if (_cellHeight) return _cellHeight;
+    
+    //文字的 Y值
+    CGFloat textY = 55;
+    CGFloat textMaxW = [UIScreen mainScreen].bounds.size.width - 2*A3Margin;
+    //文字的高度
+    CGFloat textH = [self.text boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:15]} context:nil].size.height;
+    _cellHeight = textY + textH + A3Margin;
+    
+    //有中间内容
+    
+    
+    
+    //有最热评论
+    
+    
+    //底部工具条
+    CGFloat toolbarH = 35;
+    _cellHeight += toolbarH + A3Margin;
+    return _cellHeight;
+}
 @end
