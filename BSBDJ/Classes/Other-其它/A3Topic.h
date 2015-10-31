@@ -7,6 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef enum{
+    /** 图片 */
+    A3TopicTypePicture = 10,
+    /** 文字 */
+    A3TopicTypeWord = 29,
+    /** 声音 */
+    A3TopicTypeVoice = 31,
+    /** 视频 */
+    A3TopicTypeVideo = 41
+    
+} A3TopicType;
 
 @interface A3Topic : NSObject
 // 用户 -- 发帖者
@@ -27,6 +38,8 @@
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
 
+/** 帖子的类型 */
+@property (nonatomic,assign)A3TopicType type;
 
 
 @end

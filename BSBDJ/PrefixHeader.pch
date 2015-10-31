@@ -30,8 +30,9 @@
 #define A3Color(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define A3ColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
 #define A3RandomColor A3Color(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
-
 #define A3GrayColor(v) A3Color(v, v, v)
+#define A3CommonBgColor A3GrayColor(206)
+
 
 #endif
 #endif /* PrefixHeader_pch */

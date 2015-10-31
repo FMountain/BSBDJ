@@ -21,6 +21,18 @@
 @end
 
 @implementation A3TopicCell
+//设置xib的背景图片
+- (void)awakeFromNib
+{
+    self.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainCellBackground"]];
+}
+//调整框架
+- (void)setFrame:(CGRect)frame
+{
+    frame.origin.y += A3Margin;
+    frame.size.height -= A3Margin;
+    [super setFrame:frame];
+}
 
 - (void)setTopic:(A3Topic *)topic
 {
