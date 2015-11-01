@@ -43,9 +43,24 @@ typedef enum{
 @property (nonatomic,assign)A3TopicType type;
 /** 最热评论 */
 @property (nonatomic,strong)A3Comment *top_cmt;
+/** 图片的宽度 */
+@property (nonatomic,assign)CGFloat width;
+/** 图片的高度 */
+@property (nonatomic,assign)CGFloat height;
+/** 小图 */
+@property (nonatomic,copy)NSString *small_image;
+/** 中图 */
+@property (nonatomic,copy)NSString *middle_image;
+/** 大图 */
+@property (nonatomic,copy)NSString *large_image;
+/** 是否为动态图 */
+@property (nonatomic,assign)BOOL is_gif;
 //辅助属性
+/** 中间控件的frame */
+@property (nonatomic,assign)CGRect centerViewFrame;;
 /** 自定义cell的高度 */
 @property (nonatomic,assign)CGFloat cellHeight;
 
-
+/** 是否为大图 */
+@property (nonatomic,assign,getter=isBigPicture)BOOL bigPicture;
 @end

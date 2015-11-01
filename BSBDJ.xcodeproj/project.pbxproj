@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040159501BE5E057009142F8 /* A3TopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0401594F1BE5E057009142F8 /* A3TopicPictureView.m */; };
+		040159521BE5E07B009142F8 /* A3TopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040159511BE5E07B009142F8 /* A3TopicPictureView.xib */; };
 		044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044926BC1BE0EC980092B75F /* A3TabBar.m */; };
 		0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */; };
 		04B119451BE4E6F600B220BA /* A3User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B119441BE4E6F600B220BA /* A3User.m */; };
@@ -57,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0401594E1BE5E057009142F8 /* A3TopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TopicPictureView.h; sourceTree = SOURCE_ROOT; };
+		0401594F1BE5E057009142F8 /* A3TopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TopicPictureView.m; sourceTree = SOURCE_ROOT; };
+		040159511BE5E07B009142F8 /* A3TopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3TopicPictureView.xib; sourceTree = SOURCE_ROOT; };
 		044926BB1BE0EC980092B75F /* A3TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3TabBar.h; path = "BSBDJ/Classes/Other-其它/A3TabBar.h"; sourceTree = SOURCE_ROOT; };
 		044926BC1BE0EC980092B75F /* A3TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TabBar.m; path = "BSBDJ/Classes/Other-其它/A3TabBar.m"; sourceTree = SOURCE_ROOT; };
 		0463583A1BE0E79C002264DE /* UIBarButtonItem+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+A3Extension.h"; sourceTree = "<group>"; };
@@ -148,6 +153,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0401594D1BE5E017009142F8 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				0401594E1BE5E057009142F8 /* A3TopicPictureView.h */,
+				0401594F1BE5E057009142F8 /* A3TopicPictureView.m */,
+				040159511BE5E07B009142F8 /* A3TopicPictureView.xib */,
+				04DE492C1BE35CA500BF0F85 /* A3TopicCell.h */,
+				04DE492D1BE35CA500BF0F85 /* A3TopicCell.m */,
+				04DE492F1BE35D8300BF0F85 /* A3TopicCell.xib */,
+			);
+			name = Topic;
+			sourceTree = "<group>";
+		};
 		0463583D1BE0E7CC002264DE /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,11 +297,9 @@
 		04DAC2531BE0A3770056E786 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0401594D1BE5E017009142F8 /* Topic */,
 				04DE49131BE3105E00BF0F85 /* A3TitleButton.h */,
 				04DE49141BE3105E00BF0F85 /* A3TitleButton.m */,
-				04DE492C1BE35CA500BF0F85 /* A3TopicCell.h */,
-				04DE492D1BE35CA500BF0F85 /* A3TopicCell.m */,
-				04DE492F1BE35D8300BF0F85 /* A3TopicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -568,6 +584,7 @@
 			files = (
 				04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */,
 				04DE49301BE35D8300BF0F85 /* A3TopicCell.xib in Resources */,
+				040159521BE5E07B009142F8 /* A3TopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +664,7 @@
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
 				04B119481BE4E6FE00B220BA /* A3Comment.m in Sources */,
+				040159501BE5E057009142F8 /* A3TopicPictureView.m in Sources */,
 				04DE49361BE3632300BF0F85 /* UIImageView+A3Extension.m in Sources */,
 				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
 				04DE491C1BE31B4000BF0F85 /* A3VideoViewController.m in Sources */,

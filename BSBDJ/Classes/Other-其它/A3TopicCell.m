@@ -10,6 +10,7 @@
 #import "A3Topic.h"
 #import "A3User.h"
 #import "A3Comment.h"
+#import "A3TopicPictureView.h"
 
 @interface A3TopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -24,9 +25,21 @@
 @property (weak, nonatomic) IBOutlet UIView *topCmtView;
 @property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
 
+/** 中间控件 - 图片控件 */
+@property (nonatomic, weak) A3TopicPictureView *pictureView;
 @end
 
 @implementation A3TopicCell
+#pragma mark - lazy
+- (A3TopicPictureView *)pictureView
+{
+    if (!_pictureView) {
+        A3TopicPictureView *pictureView = [A3TopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
 //设置xib的背景图片
 - (void)awakeFromNib
 {
@@ -80,6 +93,19 @@
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",username,content];
     }else {
         self.topCmtView.hidden = YES;
+    }
+    //中间的具体内容
+    if(topic.type == A3TopicTypePicture){ //图片
+        //往中间添加图片控件
+        self.pictureView.hidden = NO;
+        self.pictureView.frame = topic.centerViewFrame;
+        self.pictureView.topic = topic; //数据
+    } else if (topic.type == A3TopicTypeVoice){ //声音
+        self.pictureView.hidden = YES;
+    }else if (topic.type == A3TopicTypeVideo){ //视频
+        self.pictureView.hidden = YES;
+    }else { //文字
+        self.pictureView.hidden = YES;
     }
 }
 - (IBAction)moreClick

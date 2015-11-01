@@ -18,7 +18,10 @@
 + (NSDictionary *)replacedKeyFromPropertyName
 {
     return @{
-            @"top_cmt" : @"top_cmt[0]"
+             @"top_cmt" : @"top_cmt[0]",
+             @"small_image" : @"image0",
+             @"middle_image" : @"image2",
+             @"large_image" : @"image1",
             };
 
 }
@@ -81,7 +84,20 @@
     _cellHeight = textY + textH + A3Margin;
     
     //有中间内容
-    
+    if (self.type != A3TopicTypeWord) {
+        // 中间控件 的X Y值
+        CGFloat centerViewX = A3Margin;
+        CGFloat centerViewY = textY + textH + A3Margin;
+        //中间控件的 宽度 高度
+        CGFloat centerViewW = textMaxW;
+        CGFloat centerViewH = self.height * centerViewW / self.width;
+        if (centerViewH >= [UIScreen mainScreen].bounds.size.height) {
+            centerViewH = 200;
+            self.bigPicture = YES;
+        }
+        _centerViewFrame = CGRectMake(centerViewX, centerViewY, centerViewW, centerViewH);
+        _cellHeight += centerViewH + A3Margin;
+    }
     
     
     //有最热评论
