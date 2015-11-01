@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+@class A3Comment;
+
 typedef enum{
     /** 图片 */
     A3TopicTypePicture = 10,
@@ -37,10 +39,10 @@ typedef enum{
 @property (nonatomic, assign) NSInteger repost;
 /** 评论数量 */
 @property (nonatomic, assign) NSInteger comment;
-
 /** 帖子的类型 */
 @property (nonatomic,assign)A3TopicType type;
-
+/** 最热评论 */
+@property (nonatomic,strong)A3Comment *top_cmt;
 //辅助属性
 /** 自定义cell的高度 */
 @property (nonatomic,assign)CGFloat cellHeight;

@@ -8,6 +8,8 @@
 
 #import "A3TopicCell.h"
 #import "A3Topic.h"
+#import "A3User.h"
+#import "A3Comment.h"
 
 @interface A3TopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -18,6 +20,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *caiButton;
 @property (weak, nonatomic) IBOutlet UIButton *repostButton;    //分享
 @property (weak, nonatomic) IBOutlet UIButton *commentButton; //评论
+/** 最热评论-整体 */
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
+
 @end
 
 @implementation A3TopicCell
@@ -33,7 +39,21 @@
     frame.size.height -= A3Margin;
     [super setFrame:frame];
 }
-
+/*设置按钮的数字
+*  @param button 按钮
+*  @param number 数字
+*  @param title  数字为0时显示的文字
+ */
+- (void)setupButton:(UIButton *)button number:(NSInteger)number title:(NSString *)title
+{
+    if (number >= 10000) {
+        [button setTitle:[NSString stringWithFormat:@"%.1f万" ,number /10000.0] forState:UIControlStateNormal];
+    } else if (number == 0){
+        [button setTitle:title forState:UIControlStateNormal];
+    }else {
+        [button setTitle: [NSString stringWithFormat:@"%zd",number] forState:UIControlStateNormal];
+    }
+}
 - (void)setTopic:(A3Topic *)topic
 {
     _topic = topic;
@@ -42,9 +62,41 @@
     self.text_label.text =topic.text;
     self.createdAtLabel.text = topic.created_at;
     
-    [self.dingButton setTitle:[NSString stringWithFormat:@"%zd",topic.ding] forState:UIControlStateNormal];
-    [self.caiButton setTitle:[NSString stringWithFormat:@"%zd",topic.cai] forState:UIControlStateNormal];
-    [self.repostButton setTitle:[NSString stringWithFormat:@"%zd",topic.repost] forState:UIControlStateNormal];
-    [self.commentButton setTitle:[NSString stringWithFormat:@"%zd",topic.comment] forState:UIControlStateNormal];
+    //设置底部工具条的数字
+    [self setupButton:self.dingButton number:topic.ding title:@"顶"];
+    [self setupButton:self.caiButton number:topic.cai title:@"踩"];
+    [self setupButton:self.repostButton number:topic.repost title:@"分享"];
+    [self setupButton:self.commentButton number:topic.comment title:@"评论"];
+    
+    //最热评论
+    if(topic.top_cmt)  //如果有最热评论
+    {
+        self.topCmtView.hidden = NO;//不隐藏
+        //内容
+        NSString *content = topic.top_cmt.content;
+        //用户名
+        NSString *username = topic.top_cmt.user.username;
+        
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@",username,content];
+    }else {
+        self.topCmtView.hidden = YES;
+    }
+}
+- (IBAction)moreClick
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    //添加按钮
+    [alert addAction:[UIAlertAction actionWithTitle:@"收藏" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        A3Log(@"点击了[收藏]");
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"举报" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        A3Log(@"点击了[举报]");
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        A3Log(@"点击了[取消]");
+    }]];
+    
+    [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 @end

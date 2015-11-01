@@ -7,9 +7,23 @@
 //
 
 #import "A3Topic.h"
-
+#import "A3User.h"
+#import "A3Comment.h"
+#import <MJExtension.h>
 @implementation A3Topic
 
+/**
+ *  声明:[模型属性名]对应的[字典key]  key-mapping
+ */
++ (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{
+            @"top_cmt" : @"top_cmt[0]"
+            };
+
+}
+
+#pragma mark - 服务器返回的日期处理
 - (NSString *)created_at
 {
 //服务器返回的日期
@@ -53,6 +67,7 @@
  *  在这个方法中计算了cell的高度, 让cell根据内容的大小自动变换
  *
  */
+#pragma mark - 计算cell的高度
 - (CGFloat)cellHeight
 {
     //如果已经 计算过cellHeight,就直接返回以前的值
@@ -70,7 +85,12 @@
     
     
     //有最热评论
-    
+    if (self.top_cmt) {
+        CGFloat topCmtTitleH = 20;
+        NSString *topCmtText = [NSString stringWithFormat:@"%@ : %@",self.top_cmt.user,self.top_cmt.content];
+        CGFloat topCmtTextH = [topCmtText boundingRectWithSize:CGSizeMake(textMaxW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+        _cellHeight +=topCmtTitleH +topCmtTextH + A3Margin;
+    }
     
     //底部工具条
     CGFloat toolbarH = 35;

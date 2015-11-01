@@ -50,7 +50,7 @@ static NSString *const A3TopicCellId = @"topic";
 - (void)setupTable
 {
     //内边距
-    self.tableView.contentInset = UIEdgeInsetsMake(A3NavBarBottom + A3TitlesViewH, 0, A3TabBarH, 0 );
+    self.tableView.contentInset = UIEdgeInsetsMake(A3NavBarBottom + A3TitlesViewH, 0, A3TabBarH + A3Margin, 0 );
     
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
@@ -94,6 +94,18 @@ static NSString *const A3TopicCellId = @"topic";
     //发送请求
     __weak typeof(self) weakSelf = self;
     [self.manager GET:A3RequestURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
+        //看第几个帖子有最热评论
+        int i = 0;
+        NSArray *dictArray = responseObject[@"list"];
+        for (NSMutableDictionary *dict in dictArray) {
+            NSArray *top_cmt = dict[@"top_cmt"];
+            if (top_cmt.count) {
+                A3Log(@"第%zd个帖子有最热评论",i);
+            }
+            i++;
+        }
+        
         //字典数组 ->模型数组
         weakSelf.topics = [A3Topic objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
@@ -125,6 +137,18 @@ static NSString *const A3TopicCellId = @"topic";
     //发送请求
     __weak typeof(self) weakSelf = self;
     [self.manager GET:A3RequestURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        
+        //看第几个帖子有最热评论
+        int i = 0;
+        NSArray *dictArray = responseObject[@"list"];
+        for (NSMutableDictionary *dict in dictArray) {
+            NSArray *top_cmt = dict[@"top_cmt"];
+            if (top_cmt.count) {
+                A3Log(@"第%zd个帖子有最热评论",i);
+            }
+            i++;
+        }
+        
         //存储maxtime
         weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
@@ -166,4 +190,5 @@ static NSString *const A3TopicCellId = @"topic";
 {
     return self.topics[indexPath.row].cellHeight;
 }
+
 @end
