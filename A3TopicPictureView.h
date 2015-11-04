@@ -6,13 +6,8 @@
 //  Copyright © 2015年 mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-@class  A3Topic;
+#import "A3TopiCenterView.h"
 
-@interface A3TopicPictureView : UIView
+@interface A3TopicPictureView : A3TopiCenterView
 
-+ (instancetype)pictureView;
-
-/** 帖子模型数据 */
-@property (nonatomic,strong)A3Topic *topic;
 @end

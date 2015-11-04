@@ -40,7 +40,7 @@
 - (A3TopicPictureView *)pictureView
 {
     if (!_pictureView) {
-        A3TopicPictureView *pictureView = [A3TopicPictureView pictureView];
+        A3TopicPictureView *pictureView = [A3TopicPictureView centerView];
         [self.contentView addSubview:pictureView];
         _pictureView = pictureView;
     }
@@ -50,7 +50,7 @@
 - (A3TopicVoiceView *)voiceView
 {
     if (!_voiceView) {
-        A3TopicVoiceView  *voiceView = [A3TopicVoiceView voiceView];
+        A3TopicVoiceView  *voiceView = [A3TopicVoiceView centerView];
         [self.contentView addSubview:voiceView];
         _voiceView = voiceView;
     }
@@ -62,7 +62,7 @@
 - (A3TopicVideoView *)videoView
 {
     if (!_videoView) {
-        A3TopicVideoView  *videoView = [A3TopicVideoView videoView];
+        A3TopicVideoView  *videoView = [A3TopicVideoView centerView];
         [self.contentView addSubview:videoView];
         _videoView = videoView;
     }

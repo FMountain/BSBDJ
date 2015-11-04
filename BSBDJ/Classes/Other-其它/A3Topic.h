@@ -10,6 +10,8 @@
 @class A3Comment;
 
 typedef enum{
+    /** 全部 */
+    XMGTopicTypeAll = 1,
     /** 图片 */
     A3TopicTypePicture = 10,
     /** 文字 */

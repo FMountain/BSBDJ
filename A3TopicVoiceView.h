@@ -6,11 +6,9 @@
 //  Copyright © 2015年 mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-@class  A3Topic;
-@interface A3TopicVoiceView : UIView
+#import "A3TopiCenterView.h"
 
-+ (instancetype)voiceView;
+@interface A3TopicVoiceView : A3TopiCenterView
 
-@property (nonatomic,strong)A3Topic *topic;
+
 @end

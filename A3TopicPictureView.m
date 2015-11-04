@@ -13,7 +13,6 @@
 #import <DALabeledCircularProgressView.h> //下载进度圆条
 
 @interface A3TopicPictureView ()
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIButton *seeBigButton;
 @property (weak, nonatomic) IBOutlet UIImageView *gifView;
 @property (weak, nonatomic) IBOutlet UIImageView *placeholderView;
@@ -22,39 +21,20 @@
 
 @implementation A3TopicPictureView
 
-+ (instancetype)pictureView
-{
-    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].firstObject;
-}
-
 - (void)awakeFromNib
 {
-    //去除默认的autoresizingMask设置
-    self.autoresizingMask = UIViewAutoresizingNone;
+    [super awakeFromNib];
     
-    //初始化
+    // 初始化
     self.progressView.roundedCorners = 5;
     self.progressView.progressLabel.textColor = [UIColor whiteColor];
-    
-    //监听图片点击
-    self.imageView.userInteractionEnabled = YES;
-    [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageClick)]];
-}
-
-- (void)imageClick
-{
-    if (self.imageView.image == nil) return;
-    
-    A3SeeBigViewController *seeBig = [[A3SeeBigViewController alloc] init];
-    seeBig.topic = self.topic;
-    [self.window.rootViewController presentViewController:seeBig animated:YES completion:nil];
 }
 
 - (void)setTopic:(A3Topic *)topic
 {
-    _topic = topic;
+    [super setTopic:topic];
     //显示图片
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:topic.large_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    [_imageView sd_setImageWithURL:[NSURL URLWithString:topic.large_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         //显示正在下载的提醒
         self.progressView.hidden = NO;
         self.placeholderView.hidden = NO;
@@ -76,11 +56,11 @@
     //查看大图
     self.seeBigButton.hidden = !topic.isBigPicture;
     if (topic.isBigPicture) {
-        self.imageView.contentMode = UIViewContentModeTop;
-        self.imageView.clipsToBounds = YES;
+        _imageView.contentMode = UIViewContentModeTop;
+        _imageView.clipsToBounds = YES;
     }else{
-        self.imageView.contentMode = UIViewContentModeScaleToFill;
-        self.imageView.clipsToBounds = NO;
+        _imageView.contentMode = UIViewContentModeScaleToFill;
+        _imageView.clipsToBounds = NO;
     }
 }
 @end
