@@ -11,7 +11,7 @@
 
 typedef enum{
     /** 全部 */
-    XMGTopicTypeAll = 1,
+    A3TopicTypeAll = 1,
     /** 图片 */
     A3TopicTypePicture = 10,
     /** 文字 */

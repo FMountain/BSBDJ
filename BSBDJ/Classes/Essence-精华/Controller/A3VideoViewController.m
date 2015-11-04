@@ -11,10 +11,9 @@
 @implementation A3VideoViewController
 
 
-- (void)viewDidLoad
+- (A3TopicType)type
 {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor =A3RandomColor;
+    return A3TopicTypeVideo;
 }
+
 @end

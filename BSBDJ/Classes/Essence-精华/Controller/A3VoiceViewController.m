@@ -10,10 +10,9 @@
 
 @implementation A3VoiceViewController
 
-- (void)viewDidLoad
+- (A3TopicType)type
 {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor =A3RandomColor;
+    return A3TopicTypeVoice;
 }
+
 @end

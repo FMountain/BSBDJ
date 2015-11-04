@@ -16,6 +16,7 @@
 		043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401AC1BEA120D00F9471D /* A3TopicVideoView.m */; };
 		043401AF1BEA120D00F9471D /* A3TopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043401AD1BEA120D00F9471D /* A3TopicVideoView.xib */; };
 		043401B21BEA232600F9471D /* A3TopiCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401B11BEA232600F9471D /* A3TopiCenterView.m */; };
+		043401B51BEA291800F9471D /* A3TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401B41BEA291800F9471D /* A3TopicViewController.m */; };
 		044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044926BC1BE0EC980092B75F /* A3TabBar.m */; };
 		0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */; };
 		04B119451BE4E6F600B220BA /* A3User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B119441BE4E6F600B220BA /* A3User.m */; };
@@ -80,6 +81,8 @@
 		043401AD1BEA120D00F9471D /* A3TopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3TopicVideoView.xib; sourceTree = SOURCE_ROOT; };
 		043401B01BEA232600F9471D /* A3TopiCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TopiCenterView.h; sourceTree = SOURCE_ROOT; };
 		043401B11BEA232600F9471D /* A3TopiCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TopiCenterView.m; sourceTree = SOURCE_ROOT; };
+		043401B31BEA291800F9471D /* A3TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TopicViewController.h; sourceTree = "<group>"; };
+		043401B41BEA291800F9471D /* A3TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TopicViewController.m; sourceTree = "<group>"; };
 		044926BB1BE0EC980092B75F /* A3TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3TabBar.h; path = "BSBDJ/Classes/Other-其它/A3TabBar.h"; sourceTree = SOURCE_ROOT; };
 		044926BC1BE0EC980092B75F /* A3TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TabBar.m; path = "BSBDJ/Classes/Other-其它/A3TabBar.m"; sourceTree = SOURCE_ROOT; };
 		0463583A1BE0E79C002264DE /* UIBarButtonItem+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+A3Extension.h"; sourceTree = "<group>"; };
@@ -471,6 +474,8 @@
 		04DE49161BE3128F00BF0F85 /* Topic */ = {
 			isa = PBXGroup;
 			children = (
+				043401B31BEA291800F9471D /* A3TopicViewController.h */,
+				043401B41BEA291800F9471D /* A3TopicViewController.m */,
 				04DE49171BE31B2F00BF0F85 /* A3AllViewController.h */,
 				04DE49181BE31B2F00BF0F85 /* A3AllViewController.m */,
 				04DE491A1BE31B3F00BF0F85 /* A3VideoViewController.h */,
@@ -712,6 +717,7 @@
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
 				04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */,
+				043401B51BEA291800F9471D /* A3TopicViewController.m in Sources */,
 				043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */,
 				04DE492E1BE35CA500BF0F85 /* A3TopicCell.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,

@@ -6,8 +6,8 @@
 //  Copyright © 2015年 mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "A3TopicViewController.h"
 
-@interface A3PictureViewController : UITableViewController
+@interface A3PictureViewController : A3TopicViewController
 
 @end
