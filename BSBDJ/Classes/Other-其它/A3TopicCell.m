@@ -11,6 +11,8 @@
 #import "A3User.h"
 #import "A3Comment.h"
 #import "A3TopicPictureView.h"
+#import "A3TopicVideoView.h"
+#import "A3TopicVoiceView.h"
 
 @interface A3TopicCell()
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -27,6 +29,10 @@
 
 /** 中间控件 - 图片控件 */
 @property (nonatomic, weak) A3TopicPictureView *pictureView;
+/** 声音控件 */
+@property (nonatomic, weak) A3TopicVoiceView *voiceView;
+/** 视频控件 */
+@property (nonatomic, weak) A3TopicVideoView *videoView;
 @end
 
 @implementation A3TopicCell
@@ -39,6 +45,28 @@
         _pictureView = pictureView;
     }
     return _pictureView;
+}
+
+- (A3TopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        A3TopicVoiceView  *voiceView = [A3TopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+
+#pragma mark - lazy
+- (A3TopicVideoView *)videoView
+{
+    if (!_videoView) {
+        A3TopicVideoView  *videoView = [A3TopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
 }
 //设置xib的背景图片
 - (void)awakeFromNib
@@ -67,6 +95,9 @@
         [button setTitle: [NSString stringWithFormat:@"%zd",number] forState:UIControlStateNormal];
     }
 }
+/**
+ *  这个方法调用非常频繁
+ */
 - (void)setTopic:(A3Topic *)topic
 {
     _topic = topic;
@@ -96,16 +127,31 @@
     }
     //中间的具体内容
     if(topic.type == A3TopicTypePicture){ //图片
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
         //往中间添加图片控件
         self.pictureView.hidden = NO;
         self.pictureView.frame = topic.centerViewFrame;
         self.pictureView.topic = topic; //数据
     } else if (topic.type == A3TopicTypeVoice){ //声音
         self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+        
+        self.voiceView.hidden = NO;
+        self.voiceView.frame = topic.centerViewFrame;
+        self.voiceView.topic = topic;
     }else if (topic.type == A3TopicTypeVideo){ //视频
         self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
+        self.videoView.hidden = NO;
+        self.videoView.frame = topic.centerViewFrame;
+        self.videoView.topic = topic;
     }else { //文字
         self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
     }
 }
 - (IBAction)moreClick

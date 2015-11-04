@@ -11,6 +11,10 @@
 		040159521BE5E07B009142F8 /* A3TopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040159511BE5E07B009142F8 /* A3TopicPictureView.xib */; };
 		04168E691BE8D584001B6B5E /* A3SeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04168E671BE8D584001B6B5E /* A3SeeBigViewController.m */; };
 		04168E6A1BE8D584001B6B5E /* A3SeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04168E681BE8D584001B6B5E /* A3SeeBigViewController.xib */; };
+		043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401A71BEA11B300F9471D /* A3TopicVoiceView.m */; };
+		043401AA1BEA11B300F9471D /* A3TopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */; };
+		043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401AC1BEA120D00F9471D /* A3TopicVideoView.m */; };
+		043401AF1BEA120D00F9471D /* A3TopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043401AD1BEA120D00F9471D /* A3TopicVideoView.xib */; };
 		044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044926BC1BE0EC980092B75F /* A3TabBar.m */; };
 		0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */; };
 		04B119451BE4E6F600B220BA /* A3User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B119441BE4E6F600B220BA /* A3User.m */; };
@@ -67,6 +71,12 @@
 		04168E661BE8D584001B6B5E /* A3SeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3SeeBigViewController.h; sourceTree = "<group>"; };
 		04168E671BE8D584001B6B5E /* A3SeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3SeeBigViewController.m; sourceTree = "<group>"; };
 		04168E681BE8D584001B6B5E /* A3SeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3SeeBigViewController.xib; sourceTree = "<group>"; };
+		043401A61BEA11B300F9471D /* A3TopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TopicVoiceView.h; sourceTree = SOURCE_ROOT; };
+		043401A71BEA11B300F9471D /* A3TopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TopicVoiceView.m; sourceTree = SOURCE_ROOT; };
+		043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3TopicVoiceView.xib; sourceTree = SOURCE_ROOT; };
+		043401AB1BEA120D00F9471D /* A3TopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TopicVideoView.h; sourceTree = SOURCE_ROOT; };
+		043401AC1BEA120D00F9471D /* A3TopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TopicVideoView.m; sourceTree = SOURCE_ROOT; };
+		043401AD1BEA120D00F9471D /* A3TopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3TopicVideoView.xib; sourceTree = SOURCE_ROOT; };
 		044926BB1BE0EC980092B75F /* A3TabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3TabBar.h; path = "BSBDJ/Classes/Other-其它/A3TabBar.h"; sourceTree = SOURCE_ROOT; };
 		044926BC1BE0EC980092B75F /* A3TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TabBar.m; path = "BSBDJ/Classes/Other-其它/A3TabBar.m"; sourceTree = SOURCE_ROOT; };
 		0463583A1BE0E79C002264DE /* UIBarButtonItem+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+A3Extension.h"; sourceTree = "<group>"; };
@@ -161,6 +171,12 @@
 		0401594D1BE5E017009142F8 /* Topic */ = {
 			isa = PBXGroup;
 			children = (
+				043401A61BEA11B300F9471D /* A3TopicVoiceView.h */,
+				043401A71BEA11B300F9471D /* A3TopicVoiceView.m */,
+				043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */,
+				043401AB1BEA120D00F9471D /* A3TopicVideoView.h */,
+				043401AC1BEA120D00F9471D /* A3TopicVideoView.m */,
+				043401AD1BEA120D00F9471D /* A3TopicVideoView.xib */,
 				0401594E1BE5E057009142F8 /* A3TopicPictureView.h */,
 				0401594F1BE5E057009142F8 /* A3TopicPictureView.m */,
 				040159511BE5E07B009142F8 /* A3TopicPictureView.xib */,
@@ -590,8 +606,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043401AF1BEA120D00F9471D /* A3TopicVideoView.xib in Resources */,
 				04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */,
 				04168E6A1BE8D584001B6B5E /* A3SeeBigViewController.xib in Resources */,
+				043401AA1BEA11B300F9471D /* A3TopicVoiceView.xib in Resources */,
 				04DE49301BE35D8300BF0F85 /* A3TopicCell.xib in Resources */,
 				040159521BE5E07B009142F8 /* A3TopicPictureView.xib in Resources */,
 			);
@@ -672,6 +690,7 @@
 				04DE493C1BE3874F00BF0F85 /* NSDate+A3Extension.m in Sources */,
 				04DE49391BE36BB000BF0F85 /* A3HTTPSessionManager.m in Sources */,
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
+				043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
 				04B119481BE4E6FE00B220BA /* A3Comment.m in Sources */,
 				040159501BE5E057009142F8 /* A3TopicPictureView.m in Sources */,
@@ -687,6 +706,7 @@
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
 				04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */,
+				043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */,
 				04DE492E1BE35CA500BF0F85 /* A3TopicCell.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
 				04DE49331BE3607400BF0F85 /* UIImage+A3Extension.m in Sources */,
