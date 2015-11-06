@@ -71,4 +71,9 @@ typedef enum{
 
 /** 是否为大图 */
 @property (nonatomic,assign,getter=isBigPicture)BOOL bigPicture;
+
+/** 声音地址 */
+@property (nonatomic,copy)NSString *voiceuri;
+/** 视频地址 */
+@property (nonatomic,copy)NSString *videouri;
 @end

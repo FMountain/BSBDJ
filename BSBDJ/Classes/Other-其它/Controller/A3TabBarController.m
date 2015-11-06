@@ -12,6 +12,7 @@
 #import "A3MeViewController.h"
 #import "A3NewViewController.h"
 #import "A3TabBar.h"
+#import "A3NavigationController.h"
 
 @interface A3TabBarController ()
 
@@ -64,13 +65,13 @@
 #pragma mark - 添加所有的子控制器
 - (void)setupChildVcs
 {
-    [self setupOneChildVc:[[UINavigationController alloc] initWithRootViewController:[[A3EssenceViewController alloc] init]] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setupOneChildVc:[[A3NavigationController alloc] initWithRootViewController:[[A3EssenceViewController alloc] init]] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     //新贴
-    [self setupOneChildVc:[[UINavigationController alloc]initWithRootViewController:[[A3NewViewController alloc] init]] title:@"新贴" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setupOneChildVc:[[A3NavigationController alloc]initWithRootViewController:[[A3NewViewController alloc] init]] title:@"新贴" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
     //关注
-    [self setupOneChildVc:[[UINavigationController alloc] initWithRootViewController:[[A3FriendTrendsViewController alloc] init]] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setupOneChildVc:[[A3NavigationController alloc] initWithRootViewController:[[A3FriendTrendsViewController alloc] init]] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     //我
-    [self setupOneChildVc:[[UINavigationController alloc] initWithRootViewController:[[A3MeViewController alloc] init]] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setupOneChildVc:[[A3NavigationController alloc] initWithRootViewController:[[A3MeViewController alloc] init]] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 }
 /**
  *  添加一个子控制器

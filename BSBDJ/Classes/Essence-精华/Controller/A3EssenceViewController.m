@@ -13,6 +13,7 @@
 #import "A3VoiceViewController.h"
 #import "A3PictureViewController.h"
 #import "A3WordViewController.h"
+#import "A3RecommendTagViewController.h"
 
 @interface A3EssenceViewController ()<UIScrollViewDelegate>
 /** 当前被选中的标题按钮 */
@@ -202,7 +203,8 @@
 #pragma mark - 监听点击
 - (void)mainTagSubClick
 {
-    A3LogFuc;
+    A3RecommendTagViewController *tag = [[A3RecommendTagViewController alloc] init];
+    [self.navigationController pushViewController:tag animated:YES];
 }
 
 - (void)titleButtonClick:(A3TitleButton  *)titleButton

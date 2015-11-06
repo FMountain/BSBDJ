@@ -11,6 +11,7 @@
 		040159521BE5E07B009142F8 /* A3TopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040159511BE5E07B009142F8 /* A3TopicPictureView.xib */; };
 		04168E691BE8D584001B6B5E /* A3SeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04168E671BE8D584001B6B5E /* A3SeeBigViewController.m */; };
 		04168E6A1BE8D584001B6B5E /* A3SeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04168E681BE8D584001B6B5E /* A3SeeBigViewController.xib */; };
+		0419577B1BEBA84300B6AFD3 /* A3NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0419577A1BEBA84300B6AFD3 /* A3NavigationController.m */; };
 		043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401A71BEA11B300F9471D /* A3TopicVoiceView.m */; };
 		043401AA1BEA11B300F9471D /* A3TopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */; };
 		043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401AC1BEA120D00F9471D /* A3TopicVideoView.m */; };
@@ -19,6 +20,10 @@
 		043401B51BEA291800F9471D /* A3TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401B41BEA291800F9471D /* A3TopicViewController.m */; };
 		044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044926BC1BE0EC980092B75F /* A3TabBar.m */; };
 		0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */; };
+		046FB06C1BEB90CA0083C4AA /* A3RecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FB06A1BEB90CA0083C4AA /* A3RecommendTagCell.m */; };
+		046FB06D1BEB90CA0083C4AA /* A3RecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FB06B1BEB90CA0083C4AA /* A3RecommendTagCell.xib */; };
+		046FB0701BEB91210083C4AA /* A3RecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FB06F1BEB91210083C4AA /* A3RecommendTag.m */; };
+		046FB0731BEB97320083C4AA /* A3RecommendTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FB0721BEB97320083C4AA /* A3RecommendTagViewController.m */; };
 		04B119451BE4E6F600B220BA /* A3User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B119441BE4E6F600B220BA /* A3User.m */; };
 		04B119481BE4E6FE00B220BA /* A3Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B119471BE4E6FE00B220BA /* A3Comment.m */; };
 		04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DAC2281BE0A0CA0056E786 /* Assets.xcassets */; };
@@ -73,6 +78,8 @@
 		04168E661BE8D584001B6B5E /* A3SeeBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3SeeBigViewController.h; sourceTree = "<group>"; };
 		04168E671BE8D584001B6B5E /* A3SeeBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3SeeBigViewController.m; sourceTree = "<group>"; };
 		04168E681BE8D584001B6B5E /* A3SeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3SeeBigViewController.xib; sourceTree = "<group>"; };
+		041957791BEBA84300B6AFD3 /* A3NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3NavigationController.h; sourceTree = "<group>"; };
+		0419577A1BEBA84300B6AFD3 /* A3NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3NavigationController.m; sourceTree = "<group>"; };
 		043401A61BEA11B300F9471D /* A3TopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TopicVoiceView.h; sourceTree = SOURCE_ROOT; };
 		043401A71BEA11B300F9471D /* A3TopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TopicVoiceView.m; sourceTree = SOURCE_ROOT; };
 		043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3TopicVoiceView.xib; sourceTree = SOURCE_ROOT; };
@@ -87,6 +94,13 @@
 		044926BC1BE0EC980092B75F /* A3TabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3TabBar.m; path = "BSBDJ/Classes/Other-其它/A3TabBar.m"; sourceTree = SOURCE_ROOT; };
 		0463583A1BE0E79C002264DE /* UIBarButtonItem+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+A3Extension.h"; sourceTree = "<group>"; };
 		0463583B1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+A3Extension.m"; sourceTree = "<group>"; };
+		046FB0691BEB90CA0083C4AA /* A3RecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3RecommendTagCell.h; path = "BSBDJ/Classes/Essence-精华/Controller/A3RecommendTagCell.h"; sourceTree = SOURCE_ROOT; };
+		046FB06A1BEB90CA0083C4AA /* A3RecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3RecommendTagCell.m; path = "BSBDJ/Classes/Essence-精华/Controller/A3RecommendTagCell.m"; sourceTree = SOURCE_ROOT; };
+		046FB06B1BEB90CA0083C4AA /* A3RecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = A3RecommendTagCell.xib; path = "BSBDJ/Classes/Essence-精华/Controller/A3RecommendTagCell.xib"; sourceTree = SOURCE_ROOT; };
+		046FB06E1BEB91210083C4AA /* A3RecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3RecommendTag.h; path = "BSBDJ/Classes/Essence-精华/Controller/A3RecommendTag.h"; sourceTree = SOURCE_ROOT; };
+		046FB06F1BEB91210083C4AA /* A3RecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3RecommendTag.m; path = "BSBDJ/Classes/Essence-精华/Controller/A3RecommendTag.m"; sourceTree = SOURCE_ROOT; };
+		046FB0711BEB97320083C4AA /* A3RecommendTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3RecommendTagViewController.h; sourceTree = "<group>"; };
+		046FB0721BEB97320083C4AA /* A3RecommendTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3RecommendTagViewController.m; sourceTree = "<group>"; };
 		04B119431BE4E6F600B220BA /* A3User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3User.h; path = "BSBDJ/Classes/Other-其它/A3User.h"; sourceTree = SOURCE_ROOT; };
 		04B119441BE4E6F600B220BA /* A3User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3User.m; path = "BSBDJ/Classes/Other-其它/A3User.m"; sourceTree = SOURCE_ROOT; };
 		04B119461BE4E6FE00B220BA /* A3Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3Comment.h; path = "BSBDJ/Classes/Other-其它/A3Comment.h"; sourceTree = SOURCE_ROOT; };
@@ -309,6 +323,8 @@
 				04168E661BE8D584001B6B5E /* A3SeeBigViewController.h */,
 				04168E671BE8D584001B6B5E /* A3SeeBigViewController.m */,
 				04168E681BE8D584001B6B5E /* A3SeeBigViewController.xib */,
+				046FB0711BEB97320083C4AA /* A3RecommendTagViewController.h */,
+				046FB0721BEB97320083C4AA /* A3RecommendTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -322,6 +338,8 @@
 				04B119441BE4E6F600B220BA /* A3User.m */,
 				04B119461BE4E6FE00B220BA /* A3Comment.h */,
 				04B119471BE4E6FE00B220BA /* A3Comment.m */,
+				046FB06E1BEB91210083C4AA /* A3RecommendTag.h */,
+				046FB06F1BEB91210083C4AA /* A3RecommendTag.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,6 +350,9 @@
 				0401594D1BE5E017009142F8 /* Topic */,
 				04DE49131BE3105E00BF0F85 /* A3TitleButton.h */,
 				04DE49141BE3105E00BF0F85 /* A3TitleButton.m */,
+				046FB0691BEB90CA0083C4AA /* A3RecommendTagCell.h */,
+				046FB06A1BEB90CA0083C4AA /* A3RecommendTagCell.m */,
+				046FB06B1BEB90CA0083C4AA /* A3RecommendTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -451,6 +472,8 @@
 			children = (
 				04DAC2691BE0A5120056E786 /* A3TabBarController.h */,
 				04DAC26A1BE0A5120056E786 /* A3TabBarController.m */,
+				041957791BEBA84300B6AFD3 /* A3NavigationController.h */,
+				0419577A1BEBA84300B6AFD3 /* A3NavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -622,6 +645,7 @@
 				043401AA1BEA11B300F9471D /* A3TopicVoiceView.xib in Resources */,
 				04DE49301BE35D8300BF0F85 /* A3TopicCell.xib in Resources */,
 				040159521BE5E07B009142F8 /* A3TopicPictureView.xib in Resources */,
+				046FB06D1BEB90CA0083C4AA /* A3RecommendTagCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +719,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DE49251BE31B6E00BF0F85 /* A3WordViewController.m in Sources */,
+				0419577B1BEBA84300B6AFD3 /* A3NavigationController.m in Sources */,
 				04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */,
 				04168E691BE8D584001B6B5E /* A3SeeBigViewController.m in Sources */,
 				04DE493C1BE3874F00BF0F85 /* NSDate+A3Extension.m in Sources */,
@@ -712,6 +737,7 @@
 				04DE492B1BE359F100BF0F85 /* A3Topic.m in Sources */,
 				04DE49191BE31B2F00BF0F85 /* A3AllViewController.m in Sources */,
 				0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */,
+				046FB0731BEB97320083C4AA /* A3RecommendTagViewController.m in Sources */,
 				04DE491F1BE31B4E00BF0F85 /* A3VoiceViewController.m in Sources */,
 				04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */,
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
@@ -719,10 +745,12 @@
 				04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */,
 				043401B51BEA291800F9471D /* A3TopicViewController.m in Sources */,
 				043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */,
+				046FB06C1BEB90CA0083C4AA /* A3RecommendTagCell.m in Sources */,
 				04DE492E1BE35CA500BF0F85 /* A3TopicCell.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
 				04DE49331BE3607400BF0F85 /* UIImage+A3Extension.m in Sources */,
 				04DE49221BE31B6300BF0F85 /* A3PictureViewController.m in Sources */,
+				046FB0701BEB91210083C4AA /* A3RecommendTag.m in Sources */,
 				04B119451BE4E6F600B220BA /* A3User.m in Sources */,
 				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
 			);
@@ -849,6 +877,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = BSBDJ/PrefixHeader.pch;
 				INFOPLIST_FILE = BSBDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -864,6 +893,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = BSBDJ/PrefixHeader.pch;
 				INFOPLIST_FILE = BSBDJ/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.A3.BSBDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";

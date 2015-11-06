@@ -9,10 +9,15 @@
 #import "A3TopicVoiceView.h"
 #import "A3Topic.h"
 #import <UIImageView+WebCache.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface A3TopicVoiceView ()
 @property (weak, nonatomic) IBOutlet UILabel *playCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *voiceTimeLabel;
+- (IBAction)voiceButton:(UIButton *)sender;
+
+/** 播放器 */
+@property (nonatomic, strong) AVPlayer *player;
 @end
 
 @implementation A3TopicVoiceView
@@ -30,4 +35,20 @@
 }
 
 
+- (IBAction)voiceButton:(UIButton *)sender {
+    [self.player play];
+}
+
+
+#pragma mark - lazy
+- (AVPlayer *)player
+{
+    if (!_player) {
+        AVPlayerItem  *item = [[AVPlayerItem alloc]initWithURL:[NSURL URLWithString:self.topic.voiceuri]];
+       
+        //创建player对象
+        _player = [[AVPlayer alloc] initWithPlayerItem:item];
+    }
+    return _player;
+}
 @end

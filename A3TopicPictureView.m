@@ -23,6 +23,9 @@
 
 - (void)awakeFromNib
 {
+  
+    
+    
     [super awakeFromNib];
     
     // 初始化
