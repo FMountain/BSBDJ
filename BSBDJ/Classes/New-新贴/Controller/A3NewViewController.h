@@ -6,8 +6,8 @@
 //  Copyright © 2015年 mac. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "A3EssenceViewController.h"
 
-@interface A3NewViewController : UIViewController
+@interface A3NewViewController : A3EssenceViewController
 
 @end

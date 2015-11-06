@@ -21,6 +21,7 @@
 #import <MJRefresh.h>
 #import "A3Topic.h"
 
+#import "A3NewViewController.h"
 
 @interface A3TopicViewController ()
 /** 请求管理者 */
@@ -91,13 +92,28 @@ static NSString *const A3TopicCellId = @"topic";
     self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopic)];
     //    [self.tableView.footer beginRefreshing];
 }
+#pragma mark - 数据处理
+/**
+ *  参数a
+ *
+ *  @return newlist / list
+ */
+- (NSString *)paramA
+{
+    //isKindOfClass :判断是否为这种类类型或者是这种类型的子类
+    if ([self.parentViewController isKindOfClass:[A3NewViewController class]])
+    {
+        return @"newlist";
+    }
+    return @"list";
+}
 //加载 帖子数据
 - (void)loadNewTopic
 {
     
     //请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"]       = @"list";
+    params[@"a"]       = self.paramA;
     params[@"type"]    = @(self.type);
     params[@"c"]       = @"data";
     
