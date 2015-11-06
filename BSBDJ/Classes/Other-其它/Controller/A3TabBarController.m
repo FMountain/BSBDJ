@@ -68,8 +68,12 @@
     [self setupOneChildVc:[[A3NavigationController alloc] initWithRootViewController:[[A3EssenceViewController alloc] init]] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
     //新贴
     [self setupOneChildVc:[[A3NavigationController alloc]initWithRootViewController:[[A3NewViewController alloc] init]] title:@"新贴" image:@"tabBar_new_icon" selectedImage:@"tabBar_new_click_icon"];
+    
     //关注
-    [self setupOneChildVc:[[A3NavigationController alloc] initWithRootViewController:[[A3FriendTrendsViewController alloc] init]] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    //加载stroyboard
+    A3FriendTrendsViewController *friendTrends = [UIStoryboard storyboardWithName:NSStringFromClass([A3FriendTrendsViewController class]) bundle:nil].instantiateInitialViewController;
+    
+    [self setupOneChildVc:[[A3NavigationController alloc] initWithRootViewController:friendTrends] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
     //我
     [self setupOneChildVc:[[A3NavigationController alloc] initWithRootViewController:[[A3MeViewController alloc] init]] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 }

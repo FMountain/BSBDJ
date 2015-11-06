@@ -7,6 +7,7 @@
 //
 
 #import "A3FriendTrendsViewController.h"
+#import "A3TestViewController.h"
 
 @interface A3FriendTrendsViewController ()
 
@@ -26,6 +27,12 @@
 
 - (void)friendsRecommentClick
 {
-    A3LogFuc;
+    A3TestViewController *test = [[A3TestViewController alloc]init];
+    [self.navigationController pushViewController:test animated:YES];
+}
+
+- (IBAction)backToFriendTrendsViewController:(UIStoryboardSegue *)segue
+{
+    A3Log(@"从%@控制器返回来的",segue.sourceViewController);
 }
 @end
