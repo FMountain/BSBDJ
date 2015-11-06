@@ -107,12 +107,14 @@ static NSString *const A3TopicCellId = @"topic";
     }
     return @"list";
 }
+
 //加载 帖子数据
 - (void)loadNewTopic
 {
     
     //请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
     params[@"a"]       = self.paramA;
     params[@"type"]    = @(self.type);
     params[@"c"]       = @"data";
@@ -154,7 +156,8 @@ static NSString *const A3TopicCellId = @"topic";
 {
     //请求数据
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"]       = @"list";
+    
+    params[@"a"]       = self.paramA;
     params[@"type"]    = @(self.type);
     params[@"c"]       = @"data";
     params[@"maxtime"] = self.maxtime;
