@@ -20,7 +20,6 @@
 		043401B51BEA291800F9471D /* A3TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401B41BEA291800F9471D /* A3TopicViewController.m */; };
 		04363C0E1BEC9103009C6AC6 /* A3FriendTrendsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04363C0D1BEC9103009C6AC6 /* A3FriendTrendsViewController.storyboard */; };
 		04363C111BEC91DC009C6AC6 /* A3LoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04363C101BEC91DC009C6AC6 /* A3LoginRegisterViewController.m */; };
-		04363C141BEC94B6009C6AC6 /* A3TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04363C131BEC94B6009C6AC6 /* A3TestViewController.m */; };
 		04363C171BECA303009C6AC6 /* A3QuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04363C161BECA303009C6AC6 /* A3QuickLoginButton.m */; };
 		04363C1A1BECA327009C6AC6 /* A3LoginRegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04363C191BECA327009C6AC6 /* A3LoginRegisterTextField.m */; };
 		04363C1D1BECA593009C6AC6 /* UITextField+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04363C1C1BECA593009C6AC6 /* UITextField+A3Extension.m */; };
@@ -30,6 +29,11 @@
 		046FB06D1BEB90CA0083C4AA /* A3RecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046FB06B1BEB90CA0083C4AA /* A3RecommendTagCell.xib */; };
 		046FB0701BEB91210083C4AA /* A3RecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FB06F1BEB91210083C4AA /* A3RecommendTag.m */; };
 		046FB0731BEB97320083C4AA /* A3RecommendTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FB0721BEB97320083C4AA /* A3RecommendTagViewController.m */; };
+		04A739781BEDD0D00027A6EA /* A3RecommendFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A739771BEDD0D00027A6EA /* A3RecommendFollowViewController.m */; };
+		04A7397B1BEDFB870027A6EA /* A3RecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7397A1BEDFB870027A6EA /* A3RecommendCategory.m */; };
+		04A7397E1BEDFC450027A6EA /* A3RecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A7397D1BEDFC450027A6EA /* A3RecommendCategoryCell.m */; };
+		04A739811BEE046A0027A6EA /* A3RecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A739801BEE046A0027A6EA /* A3RecommendUser.m */; };
+		04A739841BEE04A80027A6EA /* A3RecommenduserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A739831BEE04A80027A6EA /* A3RecommenduserCell.m */; };
 		04B119451BE4E6F600B220BA /* A3User.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B119441BE4E6F600B220BA /* A3User.m */; };
 		04B119481BE4E6FE00B220BA /* A3Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B119471BE4E6FE00B220BA /* A3Comment.m */; };
 		04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DAC2281BE0A0CA0056E786 /* Assets.xcassets */; };
@@ -99,8 +103,6 @@
 		04363C0D1BEC9103009C6AC6 /* A3FriendTrendsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = A3FriendTrendsViewController.storyboard; sourceTree = "<group>"; };
 		04363C0F1BEC91DC009C6AC6 /* A3LoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3LoginRegisterViewController.h; sourceTree = "<group>"; };
 		04363C101BEC91DC009C6AC6 /* A3LoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3LoginRegisterViewController.m; sourceTree = "<group>"; };
-		04363C121BEC94B6009C6AC6 /* A3TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TestViewController.h; sourceTree = "<group>"; };
-		04363C131BEC94B6009C6AC6 /* A3TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TestViewController.m; sourceTree = "<group>"; };
 		04363C151BECA303009C6AC6 /* A3QuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3QuickLoginButton.h; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3QuickLoginButton.h"; sourceTree = SOURCE_ROOT; };
 		04363C161BECA303009C6AC6 /* A3QuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3QuickLoginButton.m; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3QuickLoginButton.m"; sourceTree = SOURCE_ROOT; };
 		04363C181BECA327009C6AC6 /* A3LoginRegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3LoginRegisterTextField.h; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3LoginRegisterTextField.h"; sourceTree = SOURCE_ROOT; };
@@ -118,6 +120,16 @@
 		046FB06F1BEB91210083C4AA /* A3RecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3RecommendTag.m; path = "BSBDJ/Classes/Essence-精华/Controller/A3RecommendTag.m"; sourceTree = SOURCE_ROOT; };
 		046FB0711BEB97320083C4AA /* A3RecommendTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3RecommendTagViewController.h; sourceTree = "<group>"; };
 		046FB0721BEB97320083C4AA /* A3RecommendTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3RecommendTagViewController.m; sourceTree = "<group>"; };
+		04A739761BEDD0D00027A6EA /* A3RecommendFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3RecommendFollowViewController.h; sourceTree = "<group>"; };
+		04A739771BEDD0D00027A6EA /* A3RecommendFollowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3RecommendFollowViewController.m; sourceTree = "<group>"; };
+		04A739791BEDFB870027A6EA /* A3RecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3RecommendCategory.h; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommendCategory.h"; sourceTree = SOURCE_ROOT; };
+		04A7397A1BEDFB870027A6EA /* A3RecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3RecommendCategory.m; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommendCategory.m"; sourceTree = SOURCE_ROOT; };
+		04A7397C1BEDFC450027A6EA /* A3RecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3RecommendCategoryCell.h; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommendCategoryCell.h"; sourceTree = SOURCE_ROOT; };
+		04A7397D1BEDFC450027A6EA /* A3RecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3RecommendCategoryCell.m; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommendCategoryCell.m"; sourceTree = SOURCE_ROOT; };
+		04A7397F1BEE046A0027A6EA /* A3RecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3RecommendUser.h; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommendUser.h"; sourceTree = SOURCE_ROOT; };
+		04A739801BEE046A0027A6EA /* A3RecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3RecommendUser.m; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommendUser.m"; sourceTree = SOURCE_ROOT; };
+		04A739821BEE04A80027A6EA /* A3RecommenduserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3RecommenduserCell.h; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommenduserCell.h"; sourceTree = SOURCE_ROOT; };
+		04A739831BEE04A80027A6EA /* A3RecommenduserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3RecommenduserCell.m; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3RecommenduserCell.m"; sourceTree = SOURCE_ROOT; };
 		04B119431BE4E6F600B220BA /* A3User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3User.h; path = "BSBDJ/Classes/Other-其它/A3User.h"; sourceTree = SOURCE_ROOT; };
 		04B119441BE4E6F600B220BA /* A3User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3User.m; path = "BSBDJ/Classes/Other-其它/A3User.m"; sourceTree = SOURCE_ROOT; };
 		04B119461BE4E6FE00B220BA /* A3Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3Comment.h; path = "BSBDJ/Classes/Other-其它/A3Comment.h"; sourceTree = SOURCE_ROOT; };
@@ -394,8 +406,8 @@
 				04363C0D1BEC9103009C6AC6 /* A3FriendTrendsViewController.storyboard */,
 				04363C0F1BEC91DC009C6AC6 /* A3LoginRegisterViewController.h */,
 				04363C101BEC91DC009C6AC6 /* A3LoginRegisterViewController.m */,
-				04363C121BEC94B6009C6AC6 /* A3TestViewController.h */,
-				04363C131BEC94B6009C6AC6 /* A3TestViewController.m */,
+				04A739761BEDD0D00027A6EA /* A3RecommendFollowViewController.h */,
+				04A739771BEDD0D00027A6EA /* A3RecommendFollowViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -403,6 +415,10 @@
 		04DAC2561BE0A3770056E786 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04A739791BEDFB870027A6EA /* A3RecommendCategory.h */,
+				04A7397A1BEDFB870027A6EA /* A3RecommendCategory.m */,
+				04A7397F1BEE046A0027A6EA /* A3RecommendUser.h */,
+				04A739801BEE046A0027A6EA /* A3RecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -414,6 +430,10 @@
 				04363C161BECA303009C6AC6 /* A3QuickLoginButton.m */,
 				04363C181BECA327009C6AC6 /* A3LoginRegisterTextField.h */,
 				04363C191BECA327009C6AC6 /* A3LoginRegisterTextField.m */,
+				04A7397C1BEDFC450027A6EA /* A3RecommendCategoryCell.h */,
+				04A7397D1BEDFC450027A6EA /* A3RecommendCategoryCell.m */,
+				04A739821BEE04A80027A6EA /* A3RecommenduserCell.h */,
+				04A739831BEE04A80027A6EA /* A3RecommenduserCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -758,16 +778,19 @@
 				043401B21BEA232600F9471D /* A3TopiCenterView.m in Sources */,
 				04363C1A1BECA327009C6AC6 /* A3LoginRegisterTextField.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
-				04363C141BEC94B6009C6AC6 /* A3TestViewController.m in Sources */,
 				04B119481BE4E6FE00B220BA /* A3Comment.m in Sources */,
 				040159501BE5E057009142F8 /* A3TopicPictureView.m in Sources */,
 				04DE49361BE3632300BF0F85 /* UIImageView+A3Extension.m in Sources */,
 				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
 				04DE491C1BE31B4000BF0F85 /* A3VideoViewController.m in Sources */,
+				04A7397E1BEDFC450027A6EA /* A3RecommendCategoryCell.m in Sources */,
 				04DE49281BE3226700BF0F85 /* A3Const.m in Sources */,
 				04DE492B1BE359F100BF0F85 /* A3Topic.m in Sources */,
 				04DE49191BE31B2F00BF0F85 /* A3AllViewController.m in Sources */,
+				04A7397B1BEDFB870027A6EA /* A3RecommendCategory.m in Sources */,
+				04A739811BEE046A0027A6EA /* A3RecommendUser.m in Sources */,
 				0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */,
+				04A739781BEDD0D00027A6EA /* A3RecommendFollowViewController.m in Sources */,
 				046FB0731BEB97320083C4AA /* A3RecommendTagViewController.m in Sources */,
 				04DE491F1BE31B4E00BF0F85 /* A3VoiceViewController.m in Sources */,
 				04DAC26B1BE0A5120056E786 /* A3TabBarController.m in Sources */,
@@ -785,6 +808,7 @@
 				04DE49221BE31B6300BF0F85 /* A3PictureViewController.m in Sources */,
 				046FB0701BEB91210083C4AA /* A3RecommendTag.m in Sources */,
 				04B119451BE4E6F600B220BA /* A3User.m in Sources */,
+				04A739841BEE04A80027A6EA /* A3RecommenduserCell.m in Sources */,
 				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
 				04363C1D1BECA593009C6AC6 /* UITextField+A3Extension.m in Sources */,
 			);

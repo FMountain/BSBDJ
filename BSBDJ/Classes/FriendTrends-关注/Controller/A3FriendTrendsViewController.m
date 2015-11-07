@@ -7,7 +7,7 @@
 //
 
 #import "A3FriendTrendsViewController.h"
-#import "A3TestViewController.h"
+#import "A3RecommendFollowViewController.h"
 
 @interface A3FriendTrendsViewController ()
 
@@ -18,8 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 设置标题
-    self.navigationItem.title = @"我的关注";
+    self.view.backgroundColor = A3CommonBgColor;
+
     
     // 设置左上角
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsRecommentClick)];
@@ -27,8 +27,7 @@
 
 - (void)friendsRecommentClick
 {
-    A3TestViewController *test = [[A3TestViewController alloc]init];
-    [self.navigationController pushViewController:test animated:YES];
+    [self performSegueWithIdentifier:@"FriendTrends2RecommendFollow" sender:nil];
 }
 
 - (IBAction)backToFriendTrendsViewController:(UIStoryboardSegue *)segue
