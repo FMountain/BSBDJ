@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="A3WebViewController">
+            <connections>
+                <outlet property="backItem" destination="po8-fn-LQM" id="QpK-K5-96h"/>
+                <outlet property="forwardItem" destination="vAv-qA-Kxn" id="qu1-Uj-jhm"/>
+                <outlet property="webView" destination="eaQ-rg-IXS" id="VcH-jv-Obg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ge2-5n-rQT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOu-uj-Oh5">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <animations/>
+                    <items>
+                        <barButtonItem enabled="NO" image="back" id="po8-fn-LQM">
+                            <connections>
+                                <action selector="back" destination="-1" id="asP-Fa-S8o"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" image="forward" id="vAv-qA-Kxn">
+                            <connections>
+                                <action selector="forward" destination="-1" id="5XA-JI-vt7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="fls-Ho-Thf"/>
+                        <barButtonItem systemItem="refresh" id="rbz-b6-RGo"/>
+                    </items>
+                </toolbar>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaQ-rg-IXS">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Y9H-qT-E3I"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UOu-uj-Oh5" firstAttribute="leading" secondItem="ge2-5n-rQT" secondAttribute="leading" id="0S3-dr-em1"/>
+                <constraint firstItem="eaQ-rg-IXS" firstAttribute="leading" secondItem="ge2-5n-rQT" secondAttribute="leading" id="Jxb-gw-241"/>
+                <constraint firstItem="eaQ-rg-IXS" firstAttribute="top" secondItem="ge2-5n-rQT" secondAttribute="top" id="Nj9-qM-GLl"/>
+                <constraint firstAttribute="trailing" secondItem="UOu-uj-Oh5" secondAttribute="trailing" id="aas-ap-5iH"/>
+                <constraint firstAttribute="bottom" secondItem="UOu-uj-Oh5" secondAttribute="bottom" id="iRe-wD-phT"/>
+                <constraint firstAttribute="trailing" secondItem="eaQ-rg-IXS" secondAttribute="trailing" id="qjx-LY-VJn"/>
+                <constraint firstItem="UOu-uj-Oh5" firstAttribute="top" secondItem="eaQ-rg-IXS" secondAttribute="bottom" id="u93-Ec-81Z"/>
+            </constraints>
+            <point key="canvasLocation" x="186" y="339"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="49" height="35"/>
+        <image name="forward" width="49" height="35"/>
+    </resources>
+</document>

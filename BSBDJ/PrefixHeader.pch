@@ -18,6 +18,8 @@
 #import "UIImageView+A3Extension.h"
 #import "NSDate+A3Extension.h"
 #import "UITextField+A3Extension.h"
+#import "NSString+A3Extension.h"
+#import "A3StatusBarViewController.h"
 
 #ifdef DEBUG //开发调试阶段
 #define A3Log(...) NSLog(__VA_ARGS__)

@@ -5,8 +5,10 @@
 //  Created by mac on 15/10/28.
 //  Copyright © 2015年 mac. All rights reserved.
 //
-
 #import "A3MeViewController.h"
+#import "A3SettingViewController.h"
+#import "A3MeCell.h"
+#import "A3MeFooter.h"
 
 @interface A3MeViewController ()
 
@@ -14,85 +16,82 @@
 
 @implementation A3MeViewController
 
+static NSString * const A3MeCellId = @"me";
+
+#pragma mark - 初始化
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // 设置表格
+    [self setupTable];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    // 设置导航栏
+    [self setupNav];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/**
+ *  设置表格
+ */
+- (void)setupTable
+{
+    self.tableView.backgroundColor = A3CommonBgColor;
+    [self.tableView registerClass:[A3MeCell class] forCellReuseIdentifier:A3MeCellId];
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = A3Margin;
+    self.tableView.contentInset = UIEdgeInsetsMake(A3Margin - A3GorupFirstCellY, 0, 0, 0);
+    
+    // 设置footer
+    self.tableView.tableFooterView = [[A3MeFooter alloc] init];
+}
+
+/**
+ *  设置导航栏
+ */
+- (void)setupNav
+{
+    // 设置标题
+    self.navigationItem.title = @"我的";
+    // 设置右上角
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
+}
+
+#pragma mark - 监听
+- (void)moonClick
+{
+    A3LogFuc;
+}
+
+- (void)settingClick
+{
+    A3SettingViewController *setting = [[A3SettingViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    [self.navigationController pushViewController:setting animated:YES];
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 1;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    A3MeCell *cell = [tableView dequeueReusableCellWithIdentifier:A3MeCellId];
     
-    // Configure the cell...
+    if (indexPath.section == 0) {
+        cell.textLabel.text = @"登录/注册";
+        cell.imageView.image = [UIImage imageNamed:@"publish-audio"];
+    } else {
+        cell.textLabel.text = @"离线下载";
+        cell.imageView.image = nil; // 写上这句会更加严谨
+    }
     
     return cell;
 }
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

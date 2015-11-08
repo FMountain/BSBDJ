@@ -9,25 +9,44 @@
 #import "AppDelegate.h"
 #import "A3TabBarController.h"
 
-@interface AppDelegate ()
-
+@interface AppDelegate () <UITabBarControllerDelegate>
+/** 记录A3TabBarController上一次选中的位置 */
+@property (nonatomic, assign) NSUInteger previousSelectedIndex;
 @end
 
 @implementation AppDelegate
 
+#pragma mark - <UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    // 重复点击了
+    if (self.previousSelectedIndex == tabBarController.selectedIndex) {
+        A3Log(@"重复点击了%zd", self.previousSelectedIndex);
+    }
+    
+    // 记录当前的选中索引
+    self.previousSelectedIndex = tabBarController.selectedIndex;
+}
 
+#pragma mark - <UIApplicationDelegate>
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  
-    //1.创建窗口
+    // 1.创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-
-    //2.设置窗口的根控制器
-    self.window.rootViewController = [[A3TabBarController alloc]init];
-    //3.显示窗口
+    
+    // 2.设置窗口的根控制器
+    A3TabBarController *tabBarVc = [[A3TabBarController alloc] init];
+    tabBarVc.delegate = self;
+    self.window.rootViewController = tabBarVc;
+    
+    // 3.显示窗口
     [self.window makeKeyAndVisible];
-    return  YES;
+    
+    // 4.显示"盖住状态栏"的控制器
+    [A3StatusBarViewController show];
+    return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -12,6 +12,19 @@
 		04168E691BE8D584001B6B5E /* A3SeeBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04168E671BE8D584001B6B5E /* A3SeeBigViewController.m */; };
 		04168E6A1BE8D584001B6B5E /* A3SeeBigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04168E681BE8D584001B6B5E /* A3SeeBigViewController.xib */; };
 		0419577B1BEBA84300B6AFD3 /* A3NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0419577A1BEBA84300B6AFD3 /* A3NavigationController.m */; };
+		0422D4641BEF1F6F003A5F24 /* A3SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D4631BEF1F6F003A5F24 /* A3SettingViewController.m */; };
+		0422D4671BEF20F1003A5F24 /* A3MeFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D4661BEF20F1003A5F24 /* A3MeFooter.m */; };
+		0422D46A1BEF214E003A5F24 /* A3MeSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D4691BEF214E003A5F24 /* A3MeSquare.m */; };
+		0422D46D1BEF2190003A5F24 /* A3MeSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D46C1BEF2190003A5F24 /* A3MeSquareButton.m */; };
+		0422D4701BEF23C4003A5F24 /* A3WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D46F1BEF23C4003A5F24 /* A3WebViewController.m */; };
+		0422D4751BEF29FA003A5F24 /* A3ClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D4741BEF29FA003A5F24 /* A3ClearCacheCell.m */; };
+		0422D4781BEF2BAE003A5F24 /* NSString+A3Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D4771BEF2BAE003A5F24 /* NSString+A3Extension.m */; };
+		0422D47B1BEF3328003A5F24 /* A3SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D47A1BEF3328003A5F24 /* A3SettingCell.m */; };
+		0422D47E1BEF35CD003A5F24 /* A3StatusBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D47D1BEF35CD003A5F24 /* A3StatusBarViewController.m */; };
+		0422D4811BEF528C003A5F24 /* A3OtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D4801BEF528C003A5F24 /* A3OtherCell.m */; };
+		0422D4831BEF52B6003A5F24 /* A3OtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422D4821BEF52B6003A5F24 /* A3OtherCell.xib */; };
+		0422D4841BEF67D0003A5F24 /* A3MeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422D4601BEF1AB5003A5F24 /* A3MeCell.m */; };
+		0422D4851BEF7340003A5F24 /* A3WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422D4711BEF240C003A5F24 /* A3WebViewController.xib */; };
 		043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401A71BEA11B300F9471D /* A3TopicVoiceView.m */; };
 		043401AA1BEA11B300F9471D /* A3TopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */; };
 		043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401AC1BEA120D00F9471D /* A3TopicVideoView.m */; };
@@ -90,6 +103,30 @@
 		04168E681BE8D584001B6B5E /* A3SeeBigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3SeeBigViewController.xib; sourceTree = "<group>"; };
 		041957791BEBA84300B6AFD3 /* A3NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3NavigationController.h; sourceTree = "<group>"; };
 		0419577A1BEBA84300B6AFD3 /* A3NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3NavigationController.m; sourceTree = "<group>"; };
+		0422D45F1BEF1AB5003A5F24 /* A3MeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3MeCell.h; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3MeCell.h"; sourceTree = SOURCE_ROOT; };
+		0422D4601BEF1AB5003A5F24 /* A3MeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3MeCell.m; path = "BSBDJ/Classes/FriendTrends-关注/Controller/A3MeCell.m"; sourceTree = SOURCE_ROOT; };
+		0422D4621BEF1F6F003A5F24 /* A3SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3SettingViewController.h; sourceTree = "<group>"; };
+		0422D4631BEF1F6F003A5F24 /* A3SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3SettingViewController.m; sourceTree = "<group>"; };
+		0422D4651BEF20F1003A5F24 /* A3MeFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3MeFooter.h; path = "BSBDJ/Classes/Me-我/Controller/A3MeFooter.h"; sourceTree = SOURCE_ROOT; };
+		0422D4661BEF20F1003A5F24 /* A3MeFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3MeFooter.m; path = "BSBDJ/Classes/Me-我/Controller/A3MeFooter.m"; sourceTree = SOURCE_ROOT; };
+		0422D4681BEF214E003A5F24 /* A3MeSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3MeSquare.h; path = "BSBDJ/Classes/Me-我/Controller/A3MeSquare.h"; sourceTree = SOURCE_ROOT; };
+		0422D4691BEF214E003A5F24 /* A3MeSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3MeSquare.m; path = "BSBDJ/Classes/Me-我/Controller/A3MeSquare.m"; sourceTree = SOURCE_ROOT; };
+		0422D46B1BEF2190003A5F24 /* A3MeSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3MeSquareButton.h; path = "BSBDJ/Classes/Me-我/Controller/A3MeSquareButton.h"; sourceTree = SOURCE_ROOT; };
+		0422D46C1BEF2190003A5F24 /* A3MeSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3MeSquareButton.m; path = "BSBDJ/Classes/Me-我/Controller/A3MeSquareButton.m"; sourceTree = SOURCE_ROOT; };
+		0422D46E1BEF23C4003A5F24 /* A3WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3WebViewController.h; sourceTree = "<group>"; };
+		0422D46F1BEF23C4003A5F24 /* A3WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3WebViewController.m; sourceTree = "<group>"; };
+		0422D4711BEF240C003A5F24 /* A3WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3WebViewController.xib; sourceTree = "<group>"; };
+		0422D4731BEF29FA003A5F24 /* A3ClearCacheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3ClearCacheCell.h; path = "BSBDJ/Classes/Me-我/Controller/A3ClearCacheCell.h"; sourceTree = SOURCE_ROOT; };
+		0422D4741BEF29FA003A5F24 /* A3ClearCacheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3ClearCacheCell.m; path = "BSBDJ/Classes/Me-我/Controller/A3ClearCacheCell.m"; sourceTree = SOURCE_ROOT; };
+		0422D4761BEF2BAE003A5F24 /* NSString+A3Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+A3Extension.h"; sourceTree = "<group>"; };
+		0422D4771BEF2BAE003A5F24 /* NSString+A3Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+A3Extension.m"; sourceTree = "<group>"; };
+		0422D4791BEF3328003A5F24 /* A3SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3SettingCell.h; path = "BSBDJ/Classes/Other-其它/A3SettingCell.h"; sourceTree = SOURCE_ROOT; };
+		0422D47A1BEF3328003A5F24 /* A3SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3SettingCell.m; path = "BSBDJ/Classes/Other-其它/A3SettingCell.m"; sourceTree = SOURCE_ROOT; };
+		0422D47C1BEF35CD003A5F24 /* A3StatusBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3StatusBarViewController.h; sourceTree = "<group>"; };
+		0422D47D1BEF35CD003A5F24 /* A3StatusBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3StatusBarViewController.m; sourceTree = "<group>"; };
+		0422D47F1BEF528C003A5F24 /* A3OtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = A3OtherCell.h; path = "BSBDJ/Classes/Other-其它/Controller/A3OtherCell.h"; sourceTree = SOURCE_ROOT; };
+		0422D4801BEF528C003A5F24 /* A3OtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = A3OtherCell.m; path = "BSBDJ/Classes/Other-其它/Controller/A3OtherCell.m"; sourceTree = SOURCE_ROOT; };
+		0422D4821BEF52B6003A5F24 /* A3OtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = A3OtherCell.xib; path = "BSBDJ/Classes/Other-其它/Controller/A3OtherCell.xib"; sourceTree = SOURCE_ROOT; };
 		043401A61BEA11B300F9471D /* A3TopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A3TopicVoiceView.h; sourceTree = SOURCE_ROOT; };
 		043401A71BEA11B300F9471D /* A3TopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A3TopicVoiceView.m; sourceTree = SOURCE_ROOT; };
 		043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = A3TopicVoiceView.xib; sourceTree = SOURCE_ROOT; };
@@ -253,6 +290,8 @@
 				04DE493B1BE3874F00BF0F85 /* NSDate+A3Extension.m */,
 				04363C1B1BECA593009C6AC6 /* UITextField+A3Extension.h */,
 				04363C1C1BECA593009C6AC6 /* UITextField+A3Extension.m */,
+				0422D4761BEF2BAE003A5F24 /* NSString+A3Extension.h */,
+				0422D4771BEF2BAE003A5F24 /* NSString+A3Extension.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -453,6 +492,11 @@
 			children = (
 				04DAC2721BE0A6670056E786 /* A3MeViewController.h */,
 				04DAC2731BE0A6670056E786 /* A3MeViewController.m */,
+				0422D4621BEF1F6F003A5F24 /* A3SettingViewController.h */,
+				0422D4631BEF1F6F003A5F24 /* A3SettingViewController.m */,
+				0422D46E1BEF23C4003A5F24 /* A3WebViewController.h */,
+				0422D46F1BEF23C4003A5F24 /* A3WebViewController.m */,
+				0422D4711BEF240C003A5F24 /* A3WebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -460,6 +504,8 @@
 		04DAC25A1BE0A3770056E786 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0422D4681BEF214E003A5F24 /* A3MeSquare.h */,
+				0422D4691BEF214E003A5F24 /* A3MeSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,6 +513,19 @@
 		04DAC25B1BE0A3770056E786 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0422D45F1BEF1AB5003A5F24 /* A3MeCell.h */,
+				0422D4601BEF1AB5003A5F24 /* A3MeCell.m */,
+				0422D4651BEF20F1003A5F24 /* A3MeFooter.h */,
+				0422D4661BEF20F1003A5F24 /* A3MeFooter.m */,
+				0422D46B1BEF2190003A5F24 /* A3MeSquareButton.h */,
+				0422D46C1BEF2190003A5F24 /* A3MeSquareButton.m */,
+				0422D4731BEF29FA003A5F24 /* A3ClearCacheCell.h */,
+				0422D4741BEF29FA003A5F24 /* A3ClearCacheCell.m */,
+				0422D4791BEF3328003A5F24 /* A3SettingCell.h */,
+				0422D47A1BEF3328003A5F24 /* A3SettingCell.m */,
+				0422D47F1BEF528C003A5F24 /* A3OtherCell.h */,
+				0422D4801BEF528C003A5F24 /* A3OtherCell.m */,
+				0422D4821BEF52B6003A5F24 /* A3OtherCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -522,6 +581,8 @@
 				04DAC26A1BE0A5120056E786 /* A3TabBarController.m */,
 				041957791BEBA84300B6AFD3 /* A3NavigationController.h */,
 				0419577A1BEBA84300B6AFD3 /* A3NavigationController.m */,
+				0422D47C1BEF35CD003A5F24 /* A3StatusBarViewController.h */,
+				0422D47D1BEF35CD003A5F24 /* A3StatusBarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -690,7 +751,9 @@
 				043401AF1BEA120D00F9471D /* A3TopicVideoView.xib in Resources */,
 				04363C0E1BEC9103009C6AC6 /* A3FriendTrendsViewController.storyboard in Resources */,
 				04DAC2291BE0A0CA0056E786 /* Assets.xcassets in Resources */,
+				0422D4851BEF7340003A5F24 /* A3WebViewController.xib in Resources */,
 				04168E6A1BE8D584001B6B5E /* A3SeeBigViewController.xib in Resources */,
+				0422D4831BEF52B6003A5F24 /* A3OtherCell.xib in Resources */,
 				043401AA1BEA11B300F9471D /* A3TopicVoiceView.xib in Resources */,
 				04DE49301BE35D8300BF0F85 /* A3TopicCell.xib in Resources */,
 				040159521BE5E07B009142F8 /* A3TopicPictureView.xib in Resources */,
@@ -772,13 +835,18 @@
 				04DE49121BE306BA00BF0F85 /* UIView+A3Extension.m in Sources */,
 				04168E691BE8D584001B6B5E /* A3SeeBigViewController.m in Sources */,
 				04DE493C1BE3874F00BF0F85 /* NSDate+A3Extension.m in Sources */,
+				0422D4701BEF23C4003A5F24 /* A3WebViewController.m in Sources */,
 				04DE49391BE36BB000BF0F85 /* A3HTTPSessionManager.m in Sources */,
 				04DAC2681BE0A3770056E786 /* main.m in Sources */,
 				043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */,
 				043401B21BEA232600F9471D /* A3TopiCenterView.m in Sources */,
 				04363C1A1BECA327009C6AC6 /* A3LoginRegisterTextField.m in Sources */,
 				044926BD1BE0EC980092B75F /* A3TabBar.m in Sources */,
+				0422D47B1BEF3328003A5F24 /* A3SettingCell.m in Sources */,
 				04B119481BE4E6FE00B220BA /* A3Comment.m in Sources */,
+				0422D4811BEF528C003A5F24 /* A3OtherCell.m in Sources */,
+				0422D4671BEF20F1003A5F24 /* A3MeFooter.m in Sources */,
+				0422D46A1BEF214E003A5F24 /* A3MeSquare.m in Sources */,
 				040159501BE5E057009142F8 /* A3TopicPictureView.m in Sources */,
 				04DE49361BE3632300BF0F85 /* UIImageView+A3Extension.m in Sources */,
 				04DAC26E1BE0A5FD0056E786 /* A3EssenceViewController.m in Sources */,
@@ -787,6 +855,7 @@
 				04DE49281BE3226700BF0F85 /* A3Const.m in Sources */,
 				04DE492B1BE359F100BF0F85 /* A3Topic.m in Sources */,
 				04DE49191BE31B2F00BF0F85 /* A3AllViewController.m in Sources */,
+				0422D4751BEF29FA003A5F24 /* A3ClearCacheCell.m in Sources */,
 				04A7397B1BEDFB870027A6EA /* A3RecommendCategory.m in Sources */,
 				04A739811BEE046A0027A6EA /* A3RecommendUser.m in Sources */,
 				0463583C1BE0E79C002264DE /* UIBarButtonItem+A3Extension.m in Sources */,
@@ -797,20 +866,25 @@
 				04DAC2671BE0A3770056E786 /* AppDelegate.m in Sources */,
 				04DAC2741BE0A6670056E786 /* A3MeViewController.m in Sources */,
 				04DE49151BE3105E00BF0F85 /* A3TitleButton.m in Sources */,
+				0422D47E1BEF35CD003A5F24 /* A3StatusBarViewController.m in Sources */,
 				043401B51BEA291800F9471D /* A3TopicViewController.m in Sources */,
 				043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */,
 				046FB06C1BEB90CA0083C4AA /* A3RecommendTagCell.m in Sources */,
 				04DE492E1BE35CA500BF0F85 /* A3TopicCell.m in Sources */,
 				04DAC2771BE0A6890056E786 /* A3NewViewController.m in Sources */,
+				0422D4841BEF67D0003A5F24 /* A3MeCell.m in Sources */,
 				04363C171BECA303009C6AC6 /* A3QuickLoginButton.m in Sources */,
 				04DE49331BE3607400BF0F85 /* UIImage+A3Extension.m in Sources */,
 				04363C111BEC91DC009C6AC6 /* A3LoginRegisterViewController.m in Sources */,
 				04DE49221BE31B6300BF0F85 /* A3PictureViewController.m in Sources */,
 				046FB0701BEB91210083C4AA /* A3RecommendTag.m in Sources */,
+				0422D4781BEF2BAE003A5F24 /* NSString+A3Extension.m in Sources */,
 				04B119451BE4E6F600B220BA /* A3User.m in Sources */,
 				04A739841BEE04A80027A6EA /* A3RecommenduserCell.m in Sources */,
 				04DAC2711BE0A6510056E786 /* A3FriendTrendsViewController.m in Sources */,
 				04363C1D1BECA593009C6AC6 /* UITextField+A3Extension.m in Sources */,
+				0422D4641BEF1F6F003A5F24 /* A3SettingViewController.m in Sources */,
+				0422D46D1BEF2190003A5F24 /* A3MeSquareButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
