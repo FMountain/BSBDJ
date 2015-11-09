@@ -66,21 +66,71 @@ static NSString * const A3UserCellId = @"user";
     
 //    self.userTable.contentInset = inset;
     self.userTable.scrollIndicatorInsets = inset;
-    
-    self.userTable.header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUsers)];
+    //下拉刷新
+    self.userTable.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewUsers)];
+    //上拉刷新
+    self.userTable.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
    
 }
 #pragma mark - 加载数据
+/**
+ *  加载更多的用户数据
+ */
+- (void)loadMoreUsers
+{
+    //取消之前的请求
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+    //当前选中的类别模型
+    A3RecommendCategory *category = self.categories[self.categoryTable.indexPathForSelectedRow.row];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"subscribe";
+    params[@"category_id"] = category.id;
+    
+    //发送请求
+    __weak typeof(self) weakSelf = self;
+    [self.manager GET:A3RequestURL  parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        //字典数组 - >模型数组
+        NSArray *moreUsers = [A3RecommendUser objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
+        //更多数据加载在尾部
+        [category.users addObjectsFromArray:moreUsers];
+        
+        //刷新 用户表格
+        [weakSelf.userTable reloadData];
+        //结束刷新
+        if (category.users.count == category.total) {
+            
+            weakSelf.userTable.footer.hidden  = YES;
+        }else{
+            [weakSelf.userTable.footer endRefreshing];
+        }
+    } failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error) {
+        A3Log(@"请求失败");
+        //结束刷新
+        [weakSelf.userTable.header endRefreshing];
+        
+    }];
+}
+
 /**
  *  加载最新的用户数据
  */
 - (void)loadNewUsers
 {
+    //取消之前的请求
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    //当前选中的类别模型
+    A3RecommendCategory * category = self.categories[self.categoryTable.indexPathForSelectedRow.row];
+    
     //请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
-    params[@"category_id"] = self.categories[self.categoryTable.indexPathForSelectedRow.row].id;
+    params[@"category_id"] = category.id;
     
     //发送请求
     __weak typeof(self) weakSelf = self;
@@ -104,6 +154,7 @@ static NSString * const A3UserCellId = @"user";
  */
 - (void)loadCategories
 {
+    
     [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
     //请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
@@ -119,6 +170,11 @@ static NSString * const A3UserCellId = @"user";
         
         //刷新 类别表格
         [weakSelf.categoryTable reloadData];
+        
+        //选中第0行
+        [weakSelf.categoryTable selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
+        //打开自动刷新
+        [weakSelf.userTable.header beginRefreshing];
         
         //隐藏
         [SVProgressHUD dismiss];
