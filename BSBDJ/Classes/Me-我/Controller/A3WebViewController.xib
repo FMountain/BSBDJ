@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="backItem" destination="po8-fn-LQM" id="QpK-K5-96h"/>
                 <outlet property="forwardItem" destination="vAv-qA-Kxn" id="qu1-Uj-jhm"/>
+                <outlet property="view" destination="ge2-5n-rQT" id="DYu-l5-Lml"/>
                 <outlet property="webView" destination="eaQ-rg-IXS" id="VcH-jv-Obg"/>
             </connections>
         </placeholder>
