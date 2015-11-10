@@ -37,6 +37,7 @@
 @implementation A3TopicViewController
 
 - (A3TopicType)type {return 0;}
+
 static NSString *const A3TopicCellId = @"topic";
 
 #pragma mark - lazy
@@ -65,7 +66,7 @@ static NSString *const A3TopicCellId = @"topic";
     
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
-    self.tableView.rowHeight = 200;
+//    self.tableView.rowHeight = 200;
     
     //没有分隔符 背景和Cell之间的间距 作分隔符
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -87,7 +88,7 @@ static NSString *const A3TopicCellId = @"topic";
     [self.tableView.header beginRefreshing];
     
     //自动调整透明度,隐藏刷新控件.
-    self.tableView.header.automaticallyChangeAlpha = YES;
+//    self.tableView.header.automaticallyChangeAlpha = YES;
     //上拉
     self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopic)];
     //    [self.tableView.footer beginRefreshing];
@@ -111,7 +112,8 @@ static NSString *const A3TopicCellId = @"topic";
 //加载 帖子数据
 - (void)loadNewTopic
 {
-    
+    //取消之前的所有请求
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
     //请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
@@ -123,16 +125,7 @@ static NSString *const A3TopicCellId = @"topic";
     __weak typeof(self) weakSelf = self;
     [self.manager GET:A3RequestURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         
-        //看第几个帖子有最热评论
-        int i = 0;
-        NSArray *dictArray = responseObject[@"list"];
-        for (NSMutableDictionary *dict in dictArray) {
-            NSArray *top_cmt = dict[@"top_cmt"];
-            if (top_cmt.count) {
-                A3Log(@"第%zd个帖子有最热评论",i);
-            }
-            i++;
-        }
+    
         //存储maxtime
         weakSelf.maxtime = responseObject[@"info"][@"maxtime"];
         
@@ -154,6 +147,8 @@ static NSString *const A3TopicCellId = @"topic";
 //加载更多 的帖子数据
 - (void)loadMoreTopic
 {
+    //取消之前的所有请求
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
     //请求数据
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     

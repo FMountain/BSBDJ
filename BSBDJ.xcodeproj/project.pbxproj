@@ -27,7 +27,7 @@
 		0422D4851BEF7340003A5F24 /* A3WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0422D4711BEF240C003A5F24 /* A3WebViewController.xib */; };
 		043401A91BEA11B300F9471D /* A3TopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401A71BEA11B300F9471D /* A3TopicVoiceView.m */; };
 		043401AA1BEA11B300F9471D /* A3TopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043401A81BEA11B300F9471D /* A3TopicVoiceView.xib */; };
-		043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401AC1BEA120D00F9471D /* A3TopicVideoView.m */; };
+		043401AE1BEA120D00F9471D /* A3TopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401AC1BEA120D00F9471D /* A3TopicVideoView.m */; settings = {COMPILER_FLAGS = "-Wno-deprecated-declarations"; }; };
 		043401AF1BEA120D00F9471D /* A3TopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043401AD1BEA120D00F9471D /* A3TopicVideoView.xib */; };
 		043401B21BEA232600F9471D /* A3TopiCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401B11BEA232600F9471D /* A3TopiCenterView.m */; };
 		043401B51BEA291800F9471D /* A3TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043401B41BEA291800F9471D /* A3TopicViewController.m */; };

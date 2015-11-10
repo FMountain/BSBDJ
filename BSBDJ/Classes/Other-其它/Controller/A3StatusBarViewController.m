@@ -37,6 +37,8 @@ static id instance_;
 }
 
 #pragma mark - window相关处理
+
+//设置一个控制器永远在其它控制器上面.设置一个window
 static UIWindow *window_;
 + (void)show
 {
@@ -100,7 +102,7 @@ static UIWindow *window_;
 }
 
 /**
- *  在view中搜索所有的scrollView
+ *  在view中搜索所有的scrollView 让当前的最上面.
  */
 - (void)searchScrollViewInView:(UIView *)view
 {
