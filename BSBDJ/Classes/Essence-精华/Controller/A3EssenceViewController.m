@@ -209,7 +209,7 @@
 
 - (void)titleButtonClick:(A3TitleButton  *)titleButton
 {
-    A3LogFuc;
+    A3LogFuc; 
     //让当前被 选中的标题按钮恢复以前的状态 (取消选中)
     self.selectedTitleButton.selected = NO;
     
